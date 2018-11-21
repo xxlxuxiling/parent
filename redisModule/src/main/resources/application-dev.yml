@@ -1,0 +1,6 @@
+
+# 开发环境配置
+spring:
+  profiles: dev
+  datasource:
+    url: jdbc:mysql://localhost:3306/

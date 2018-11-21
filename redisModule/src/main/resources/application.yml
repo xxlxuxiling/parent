@@ -1,0 +1,55 @@
+server:
+  port: 8077
+
+
+
+#\u8BBE\u7F6E\u4E0D\u80FD\u8BA9\u81EA\u5DF1\u68C0\u67E5\u81EA\u5DF1\u53D1\u73B0\u670D\u52A1\u6CE8\u518C
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      #\u8BBE\u7F6E\u4E0EEureka Server\u4EA4\u4E92\u7684\u5730\u5740\uFF0C\u67E5\u8BE2\u670D\u52A1\u548C\u6CE8\u518C\u670D\u52A1\u90FD\u9700\u8981\u4F9D\u8D56\u8FD9\u4E2A\u5730\u5740\u3002\u9ED8\u8BA4\u662Fhttp://localhost:8761(UI\u754C\u9762)/eureka \uFF1B\u591A\u4E2A\u5730\u5740\u53EF\u4F7F\u7528 , \u5206\u9694\u3002
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  instance:
+    hostname: localhost
+spring:
+  application:
+    name: redisModule
+    #redis\u96C6\u7FA4\u914D\u7F6E
+  redis:
+    cluster:
+      nodes: 192.168.177.134:9001,192.168.177.134:9002,192.168.177.134:9003,192.168.177.134:9004,192.168.177.134:9005,192.168.177.134:9006
+
+      #redis\u64CD\u4F5C\u7684\u8D85\u65F6\u65F6\u95F4
+    commandTimeout: 10000
+    expireSeconds: 120
+    jedis:
+      pool:
+        ## \u8FDE\u63A5\u6C60\u6700\u5927\u8FDE\u63A5\u6570\uFF08\u4F7F\u7528\u8D1F\u503C\u8868\u793A\u6CA1\u6709\u9650\u5236\uFF09
+        max-active: 300
+        ## \u8FDE\u63A5\u6C60\u6700\u5927\u963B\u585E\u7B49\u5F85\u65F6\u95F4\uFF08\u4F7F\u7528\u8D1F\u503C\u8868\u793A\u6CA1\u6709\u9650\u5236\uFF09
+        max-wait: -1
+        max-idle: 8
+      ## Redis\u6570\u636E\u5E93\u7D22\u5F15(\u9ED8\u8BA4\u4E3A0)
+    database: 0
+    ## \u8FDE\u63A5\u8D85\u65F6\u65F6\u95F4\uFF08\u6BEB\u79D2\uFF09
+    timeout: 6000
+  profiles:
+    #开发环境
+    active: dev
+#配置数据库连接信息
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    data-username: root
+    data-password: admin
+    hikari:
+      max-lifetime: 1765000 #一个连接的生命时长（毫秒），超时而且没被使用则被释放（retired），缺省:30分钟，建议设置比数据库超时时长少30秒以上
+      maximum-pool-size: 15 #连接池中允许的最大连接数。缺省值：10；推荐的公式：((core_count * 2) + effective_spindle_count)
+
+
+
+
+
+
+
