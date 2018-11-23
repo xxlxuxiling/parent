@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a1d1110-ffbb-4054-a4f7-a405e2f0429b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/redisModule/src/main/java/com/schcilin/redismodule/config/RedissonClusterConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redisModule/src/main/java/com/schcilin/redismodule/distributedLock/DistributedLock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redisModule/src/main/java/com/schcilin/redismodule/distributedLock/impl/RedissonDistributedLocker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redisModule/src/main/resources/templates/index.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisModule/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/redisModule/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/redisModule/src/main/java/com/schcilin/redismodule/controller/UserOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisModule/src/main/java/com/schcilin/redismodule/controller/UserOrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redisModule/src/main/java/com/schcilin/redismodule/service/RedisDistributedService.java" beforeDir="false" afterPath="$PROJECT_DIR$/redisModule/src/main/java/com/schcilin/redismodule/service/RedisDistributedService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,16 +38,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1831" />
-          <entry key="txt" value="24" />
+          <entry key="java" value="1859" />
+          <entry key="txt" value="36" />
           <entry key="xml" value="154" />
           <entry key="yml" value="680" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1831" />
-          <entry key="PLAIN_TEXT" value="24" />
+          <entry key="JAVA" value="1859" />
+          <entry key="PLAIN_TEXT" value="36" />
           <entry key="XML" value="154" />
           <entry key="YAML" value="680" />
         </counts>
@@ -92,8 +85,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/redisModule/src/main/java/com/schcilin/redismodule/controller/UserOrderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
+            <state relative-caret-position="127">
+              <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -419,7 +412,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542965733149" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542968921253" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="D:/software/Git/bin/git.exe" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -541,7 +534,7 @@
       <workItem from="1542780347457" duration="10957000" />
       <workItem from="1542849264959" duration="3855000" />
       <workItem from="1542867063700" duration="16424000" />
-      <workItem from="1542953421285" duration="7450000" />
+      <workItem from="1542953421285" duration="9405000" />
     </task>
     <task id="LOCAL-00001" summary="eureka注册">
       <created>1542705902706</created>
@@ -564,7 +557,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542892125896</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="redisson分布式锁的实现">
+      <created>1542965766416</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1542965766416</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -600,7 +600,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72592000" />
+    <option name="totallyTimeSpent" value="74547000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -615,7 +615,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.16578484" visible="true" weight="0.04236006" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.16578484" visible="true" weight="0.078668684" />
       <window_info id="Structure" order="1" sideWeight="0.83421516" side_tool="true" weight="0.23827533" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -663,7 +663,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="eureka注册" />
     <MESSAGE value="redis集群配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="redis集群配置" />
+    <MESSAGE value="redisson分布式锁的实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="redisson分布式锁的实现" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://D:/software/apache-maven-3.5.4/repository/org/springframework/cloud/spring-cloud-commons/2.1.0.M1/spring-cloud-commons-2.1.0.M1.jar!/org/springframework/cloud/client/SpringCloudApplication.class" />
@@ -1005,8 +1006,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/redisModule/src/main/java/com/schcilin/redismodule/controller/UserOrderController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
+        <state relative-caret-position="127">
+          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
