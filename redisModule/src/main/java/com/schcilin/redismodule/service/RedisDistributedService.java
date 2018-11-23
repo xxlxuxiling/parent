@@ -47,7 +47,7 @@ public class RedisDistributedService {
         //lua脚本
         String luaScript = "if redis.call('get', KEYS[1]) == ARGV[1] then return redis.call('del', KEYS[1]) else return 0 end";
         Object result = jedis.eval(luaScript, Collections.singletonList(lockkey), Collections.singletonList(uniqueId));
-       //存在问题： Client A去加锁lockKey，然后释放锁，在执行del(lockKey)之前，这时lockKey锁expire到期失效了，此时Client B尝试加锁lockKey成功，Client A接着执行释放锁操作(del)，便释放了Client B的锁.
+       //如下释放分布式锁存在问题： Client A去加锁lockKey，然后释放锁，在执行del(lockKey)之前，这时lockKey锁expire到期失效了，此时Client B尝试加锁lockKey成功，Client A接着执行释放锁操作(del)，便释放了Client B的锁.
         /*Object result="";
         if (uniqueId.equals(jedis.get(lockkey))) {
             result = jedis.del(lockkey);
