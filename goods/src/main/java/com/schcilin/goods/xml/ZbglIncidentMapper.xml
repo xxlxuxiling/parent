@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.schcilin.goods.mapper.ZbglIncidentMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.schcilin.goods.entity.ZbglIncident">
+        <id column="id" property="id" />
+        <result column="status" property="status" />
+        <result column="subject" property="subject" />
+        <result column="org_code" property="orgCode" />
+        <result column="company_id" property="companyId" />
+        <result column="company_code" property="companyCode" />
+        <result column="company_name" property="companyName" />
+        <result column="dept_id" property="deptId" />
+        <result column="dept_code" property="deptCode" />
+        <result column="dept_name" property="deptName" />
+        <result column="creator_name" property="creatorName" />
+        <result column="creator_phone" property="creatorPhone" />
+        <result column="create_date" property="createDate" />
+        <result column="create_id" property="createId" />
+        <result column="create_account" property="createAccount" />
+        <result column="create_name" property="createName" />
+        <result column="app_no" property="appNo" />
+        <result column="custom_name" property="customName" />
+        <result column="custom_id" property="customId" />
+        <result column="return_time" property="returnTime" />
+        <result column="submit_start" property="submitStart" />
+        <result column="submit_end" property="submitEnd" />
+        <result column="activity_name" property="activityName" />
+        <result column="publish_status" property="publishStatus" />
+        <result column="description" property="description" />
+        <result column="informant_name" property="informantName" />
+        <result column="informant_account" property="informantAccount" />
+    </resultMap>
+
+</mapper>

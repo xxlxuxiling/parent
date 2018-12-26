@@ -23,6 +23,7 @@
     <modules>
         <module>eureka</module>
         <module>redisModule</module>
+        <module>goods</module>
     </modules>
 
     <dependencies>
