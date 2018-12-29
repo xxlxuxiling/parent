@@ -28,7 +28,7 @@ public class ZbglIncidentContrroller {
     private ZbglIncidentService zbglIncidentService;
     @GetMapping(value = "/demo", produces = "application/json")
     public String demo() {
-        ZbglIncident byId = this.zbglIncidentService.getById(1);
+        ZbglIncident byId = this.zbglIncidentService.getById("0252993f02114f70952176aa6b3e21ff");
 
         log.info("大厦到拉萨回到拉萨好点了");
         return byId.toString();

@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a1d1110-ffbb-4054-a4f7-a405e2f0429b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/goods/src/main/java/com/schcilin/goods/config/DataSourceConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goods/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/goods/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goods/src/main/java/com/schcilin/goods/CodeGeneration.java" beforeDir="false" afterPath="$PROJECT_DIR$/goods/src/main/java/com/schcilin/goods/CodeGeneration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goods/src/main/java/com/schcilin/goods/GoodsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/goods/src/main/java/com/schcilin/goods/GoodsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goods/src/main/java/com/schcilin/goods/config/MybatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/goods/src/main/java/com/schcilin/goods/config/MybatisPlusConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/goods/src/main/java/com/schcilin/goods/controller/ZbglIncidentContrroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/goods/src/main/java/com/schcilin/goods/controller/ZbglIncidentContrroller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goods/src/main/java/com/schcilin/goods/mapper/ZbglIncidentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/goods/src/main/java/com/schcilin/goods/mapper/ZbglIncidentMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goods/src/main/java/com/schcilin/goods/service/ZbglIncidentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/goods/src/main/java/com/schcilin/goods/service/ZbglIncidentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goods/src/main/java/com/schcilin/goods/serviceImpl/ZbglIncidentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/goods/src/main/java/com/schcilin/goods/service/impl/ZbglIncidentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goods/src/main/java/com/schcilin/goods/xml/ZbglIncidentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/goods/src/main/resources/mapper/ZbglIncidentMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goods/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/goods/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goods/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/goods/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goods/src/test/java/com/schcilin/goods/GoodsApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/goods/src/test/java/com/schcilin/goods/GoodsApplicationTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -67,16 +54,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2203" />
-          <entry key="txt" value="66" />
+          <entry key="java" value="2213" />
+          <entry key="txt" value="111" />
           <entry key="xml" value="185" />
           <entry key="yml" value="975" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2203" />
-          <entry key="PLAIN_TEXT" value="66" />
+          <entry key="JAVA" value="2213" />
+          <entry key="PLAIN_TEXT" value="111" />
           <entry key="XML" value="185" />
           <entry key="YAML" value="975" />
         </counts>
@@ -84,38 +71,38 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="MODULES/mdl-goods" value="1" />
-          <entry key="class" value="23" />
+          <entry key="class" value="24" />
           <entry key="cmd" value="1" />
           <entry key="ftl" value="1" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="1" />
           <entry key="iml" value="1" />
-          <entry key="java" value="74" />
+          <entry key="java" value="75" />
           <entry key="pom" value="6" />
           <entry key="properties" value="3" />
           <entry key="xml" value="14" />
-          <entry key="yml" value="10" />
+          <entry key="yml" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="23" />
+          <entry key="CLASS" value="24" />
           <entry key="FTL" value="1" />
           <entry key="HTML" value="1" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="74" />
+          <entry key="JAVA" value="75" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Properties" value="3" />
           <entry key="UML" value="1" />
           <entry key="XML" value="20" />
-          <entry key="YAML" value="10" />
+          <entry key="YAML" value="11" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/goods/src/main/java/com/schcilin/goods/mapper/ZbglIncidentMapper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
@@ -128,19 +115,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/goods/src/main/java/com/schcilin/goods/CodeGeneration.java">
+        <entry file="file://$PROJECT_DIR$/goods/src/main/java/com/schcilin/goods/entity/ZbglIncident.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="63" column="16" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://D:/software/apache-maven-3.5.4/repository/com/baomidou/mybatis-plus-generator/3.0.5/mybatis-plus-generator-3.0.5.jar!/com/baomidou/mybatisplus/generator/config/GlobalConfig.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+            <state relative-caret-position="247">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -148,8 +126,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/goods/src/test/java/com/schcilin/goods/GoodsApplicationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+            <state relative-caret-position="285">
+              <caret line="22" column="99" selection-start-line="22" selection-start-column="67" selection-end-line="22" selection-end-column="99" />
             </state>
           </provider>
         </entry>
@@ -178,8 +156,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/goods/src/main/java/com/schcilin/goods/config/MybatisPlusConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="52" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
+            <state relative-caret-position="405">
+              <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -190,20 +168,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/goods/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
+            <state relative-caret-position="152">
               <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/goods/src/main/java/com/schcilin/goods/controller/ZbglIncidentContrroller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="23" column="21" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="21" />
+            <state relative-caret-position="94">
+              <caret line="30" column="94" selection-start-line="30" selection-start-column="94" selection-end-line="30" selection-end-column="94" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/goods/src/main/resources/application-dev.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="10" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -256,7 +243,6 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/goods/src/main/java/com/schcilin/goods/GoodsApplication.java" />
         <option value="$PROJECT_DIR$/goods/pom.xml" />
-        <option value="$PROJECT_DIR$/goods/src/main/java/com/schcilin/goods/controller/ZbglIncidentContrroller.java" />
         <option value="$PROJECT_DIR$/goods/src/main/java/com/schcilin/goods/config/DataSourceConfig.java" />
         <option value="$PROJECT_DIR$/goods/src/main/resources/application-dev.yml" />
         <option value="$PROJECT_DIR$/goods/src/main/resources/application.yml" />
@@ -266,6 +252,7 @@
         <option value="$PROJECT_DIR$/goods/src/main/java/com/schcilin/goods/service/ZbglIncidentService.java" />
         <option value="$PROJECT_DIR$/goods/src/main/java/com/schcilin/goods/service/impl/ZbglIncidentServiceImpl.java" />
         <option value="$PROJECT_DIR$/goods/src/main/java/com/schcilin/goods/config/MybatisPlusConfig.java" />
+        <option value="$PROJECT_DIR$/goods/src/main/java/com/schcilin/goods/controller/ZbglIncidentContrroller.java" />
       </list>
     </option>
   </component>
@@ -541,6 +528,14 @@
               <item name="Maven: com.baomidou:mybatis-plus-extension:3.0.5" type="70bed36:NamedLibraryElementNode" />
               <item name="mybatis-plus-extension-3.0.5.jar" type="462c0819:PsiDirectoryNode" />
               <item name="extension" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.baomidou:mybatis-plus-extension:3.0.5" type="70bed36:NamedLibraryElementNode" />
+              <item name="mybatis-plus-extension-3.0.5.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="extension" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -621,7 +616,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546077538580" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546078462791" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="D:/software/Git/bin/git.exe" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -652,7 +647,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GoodsApplicationTests.testDemo">
+  <component name="RunManager" selected="Spring Boot.GoodsApplication">
     <configuration name="GoodsApplicationTests.testDemo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="goods" />
       <extension name="coverage">
@@ -718,9 +713,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GoodsApplicationTests.testDemo" />
         <item itemvalue="Spring Boot.GoodsApplication" />
         <item itemvalue="Spring Boot.EurekaApplication" />
+        <item itemvalue="JUnit.GoodsApplicationTests.testDemo" />
         <item itemvalue="Spring Boot.RedisModuleApplication" />
       </list>
     </recent_temporary>
@@ -761,7 +756,7 @@
       <workItem from="1545804636411" duration="11602000" />
       <workItem from="1545873177512" duration="1041000" />
       <workItem from="1545875650782" duration="845000" />
-      <workItem from="1546069889305" duration="7588000" />
+      <workItem from="1546069889305" duration="8519000" />
     </task>
     <task id="LOCAL-00001" summary="eureka注册">
       <created>1542705902706</created>
@@ -805,7 +800,14 @@
       <option name="project" value="LOCAL" />
       <updated>1545813921452</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="配置hikari数据库连接池，暂时service层调用不了mapper层，问题待解决">
+      <created>1546077631396</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1546077631396</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -841,7 +843,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106966000" />
+    <option name="totallyTimeSpent" value="107897000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -855,7 +857,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.16578484" visible="true" weight="0.19509594" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.16578484" visible="true" weight="0.19509594" />
       <window_info id="Structure" order="1" sideWeight="0.83421516" side_tool="true" weight="0.23827533" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -867,7 +869,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.2844734" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.43648207" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.5548317" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.49425286" />
@@ -907,20 +909,14 @@
     <MESSAGE value="redisson分布式锁的实现" />
     <MESSAGE value="java8实现" />
     <MESSAGE value="mybatis-plus自动生成代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="mybatis-plus自动生成代码" />
+    <MESSAGE value="配置hikari数据库连接池，暂时service层调用不了mapper层，问题待解决" />
+    <option name="LAST_COMMIT_MESSAGE" value="配置hikari数据库连接池，暂时service层调用不了mapper层，问题待解决" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://D:/software/apache-maven-3.5.4/repository/org/redisson/redisson/3.9.0/redisson-3.9.0-sources.jar!/org/redisson/Redisson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="390" column="17" selection-start-line="390" selection-start-column="17" selection-end-line="390" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/software/apache-maven-3.5.4/repository/com/google/guava/guava/20.0/guava-20.0.jar!/com/google/common/util/concurrent/CycleDetectingLockFactory.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
@@ -1120,13 +1116,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/goods/src/main/java/com/schcilin/goods/entity/ZbglIncident.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/software/apache-maven-3.5.4/repository/org/springframework/spring-beans/5.0.10.RELEASE/spring-beans-5.0.10.RELEASE.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2166">
@@ -1184,23 +1173,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/goods/src/main/resources/application-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goods/src/main/java/com/schcilin/goods/controller/ZbglIncidentContrroller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="23" column="21" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/software/apache-maven-3.5.4/repository/com/baomidou/mybatis-plus-generator/3.0.5/mybatis-plus-generator-3.0.5.jar!/com/baomidou/mybatisplus/generator/config/GlobalConfig.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
@@ -1208,24 +1180,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/goods/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/goods/src/main/java/com/schcilin/goods/CodeGeneration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="489">
           <caret line="63" column="16" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goods/src/test/java/com/schcilin/goods/GoodsApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -1264,20 +1222,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/goods/src/main/java/com/schcilin/goods/config/MybatisPlusConfig.java">
+    <entry file="file://$PROJECT_DIR$/goods/src/main/java/com/schcilin/goods/mapper/ZbglIncidentMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="52" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
+        <state relative-caret-position="285">
+          <caret line="15" column="70" lean-forward="true" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/goods/src/main/java/com/schcilin/goods/mapper/ZbglIncidentMapper.java">
+    <entry file="file://$PROJECT_DIR$/goods/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goods/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goods/src/main/java/com/schcilin/goods/entity/ZbglIncident.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/software/apache-maven-3.5.4/repository/com/baomidou/mybatis-plus-extension/3.0.5/mybatis-plus-extension-3.0.5.jar!/com/baomidou/mybatisplus/extension/plugins/PerformanceInterceptor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goods/src/main/java/com/schcilin/goods/config/MybatisPlusConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goods/src/test/java/com/schcilin/goods/GoodsApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="15" column="70" lean-forward="true" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
+          <caret line="22" column="99" selection-start-line="22" selection-start-column="67" selection-end-line="22" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goods/src/main/java/com/schcilin/goods/controller/ZbglIncidentContrroller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="30" column="94" selection-start-line="30" selection-start-column="94" selection-end-line="30" selection-end-column="94" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
