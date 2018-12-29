@@ -61,7 +61,8 @@ public class CodeGeneration {
         pc.setParent("com.schcilin.goods");
         pc.setController("controller");
         pc.setService("service");
-        pc.setServiceImpl("serviceImpl");
+        //修改层次结构
+        pc.setServiceImpl("service.Impl");
         pc.setMapper("mapper");
         pc.setEntity("entity");
         pc.setXml("xml");

@@ -1,4 +1,4 @@
-package com.schcilin.goods.serviceImpl;
+package com.schcilin.goods.service.impl;
 
 import com.schcilin.goods.entity.ZbglIncident;
 import com.schcilin.goods.mapper.ZbglIncidentMapper;

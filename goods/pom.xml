@@ -38,14 +38,6 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- Mybatis-plus -->
-        <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus -->
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus</artifactId>
-            <version>3.0.6</version>
-        </dependency>
-
         <!-- https://mvnrepository.com/artifact/org.apache.velocity/velocity -->
         <dependency>
             <groupId>org.apache.velocity</groupId>
@@ -57,8 +49,8 @@
         <!-- Begin of DB related -->
         <dependency>
             <groupId>com.baomidou</groupId>
-            <artifactId>mybatisplus-spring-boot-starter</artifactId>
-            <version>1.0.5</version>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.0.5</version>
             <exclusions>
                 <exclusion>
                     <!--排除springboot自带的jdbc连接-->

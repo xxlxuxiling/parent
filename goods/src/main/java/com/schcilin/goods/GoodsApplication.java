@@ -8,7 +8,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @SpringCloudApplication
 @EnableTransactionManagement//开启事务
-@MapperScan("com.schcilin.goods")
 public class GoodsApplication {
 
     public static void main(String[] args) {

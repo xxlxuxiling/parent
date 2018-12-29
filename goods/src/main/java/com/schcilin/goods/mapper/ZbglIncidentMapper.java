@@ -1,7 +1,8 @@
 package com.schcilin.goods.mapper;
 
-import com.schcilin.goods.entity.ZbglIncident;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.schcilin.goods.entity.ZbglIncident;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
  * <p>
@@ -11,6 +12,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author garve
  * @since 2018-12-26
  */
+@Mapper
 public interface ZbglIncidentMapper extends BaseMapper<ZbglIncident> {
 
 }

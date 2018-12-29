@@ -1,9 +1,16 @@
 package com.schcilin.goods.controller;
 
 
+import com.schcilin.goods.entity.ZbglIncident;
+import com.schcilin.goods.service.ZbglIncidentService;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 /**
  * <p>
@@ -13,9 +20,19 @@ import org.springframework.stereotype.Controller;
  * @author garve
  * @since 2018-12-26
  */
-@Controller
-@RequestMapping("/zbglIncident")
+@RestController
+@RequestMapping("/int")
+@Slf4j
 public class ZbglIncidentContrroller {
+    @Autowired
+    private ZbglIncidentService zbglIncidentService;
+    @GetMapping(value = "/demo", produces = "application/json")
+    public String demo() {
+        ZbglIncident byId = this.zbglIncidentService.getById(1);
+
+        log.info("大厦到拉萨回到拉萨好点了");
+        return byId.toString();
+    }
 
 }
 

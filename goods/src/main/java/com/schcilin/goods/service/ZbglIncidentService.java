@@ -11,6 +11,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @author garve
  * @since 2018-12-26
  */
+
 public interface ZbglIncidentService extends IService<ZbglIncident> {
 
 }
