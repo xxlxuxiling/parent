@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableTransactionManagement//开启事务
 @RestController
 public class GoodsApplication {
-    @Value("${name}")
+    @Value("${app.name.name}")
     private String name;
 
     public static void main(String[] args) {
@@ -23,7 +23,7 @@ public class GoodsApplication {
     public String test() {
         return name;
     }
-    @Bean
+   // @Bean
     public static PropertySourcesPlaceholderConfigurer placeholderConfigurer() {
         PropertySourcesPlaceholderConfigurer c = new PropertySourcesPlaceholderConfigurer();
         c.setIgnoreUnresolvablePlaceholders(true);//一个配置文件中找不到继续找
