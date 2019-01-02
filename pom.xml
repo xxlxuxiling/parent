@@ -24,6 +24,7 @@
         <module>eureka</module>
         <module>redisModule</module>
         <module>goods</module>
+        <module>basicInfo</module>
     </modules>
 
     <dependencies>

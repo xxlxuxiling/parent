@@ -1,0 +1,52 @@
+server:
+  port: 8088
+
+
+
+#\u8BBE\u7F6E\u4E0D\u80FD\u8BA9\u81EA\u5DF1\u68C0\u67E5\u81EA\u5DF1\u53D1\u73B0\u670D\u52A1\u6CE8\u518C
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      #\u8BBE\u7F6E\u4E0EEureka Server\u4EA4\u4E92\u7684\u5730\u5740\uFF0C\u67E5\u8BE2\u670D\u52A1\u548C\u6CE8\u518C\u670D\u52A1\u90FD\u9700\u8981\u4F9D\u8D56\u8FD9\u4E2A\u5730\u5740\u3002\u9ED8\u8BA4\u662Fhttp://localhost:8761(UI\u754C\u9762)/eureka \uFF1B\u591A\u4E2A\u5730\u5740\u53EF\u4F7F\u7528 , \u5206\u9694\u3002
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
+  instance:
+    hostname: localhost
+spring:
+  application:
+    name: basicInfo
+  profiles:
+    active: dev
+
+#mybatis plus
+mybatis-plus:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  #实体扫描，多个package用逗号或者分号分隔
+  typeAliasesPackage: com.schcilin.basicInfo.entity
+  #typeEnumsPackage: com.baomidou.springboot.entity.enums
+  global-config:
+    #刷新mapper 调试神器
+    db-config:
+      #主键类型  0:"数据库ID自增", 1:"用户输入ID",2:"全局唯一ID (数字类型唯一ID)", 3:"全局唯一ID UUID";
+      id-type: UUID
+      #字段策略 0:"忽略判断",1:"非 NULL 判断"),2:"非空判断"
+      field-strategy: not_empty
+      #驼峰下划线转换
+      column-underline: true
+      #数据库大写下划线转换
+      #capital-mode: true
+      #逻辑删除配置
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+      db-type: mysql
+    refresh: true
+    #自定义填充策略接口实现
+    #meta-object-handler: com.baomidou.springboot.xxx
+    #自定义SQL注入器
+  #sql-injector: com.baomidou.mybatisplus.extension.injector.LogicSqlInjector
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+
+

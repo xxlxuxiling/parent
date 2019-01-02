@@ -1,0 +1,32 @@
+server:
+  port: 8091
+
+
+#eureka注册配置
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      #\u8BBE\u7F6E\u4E0EEureka Server\u4EA4\u4E92\u7684\u5730\u5740\uFF0C\u67E5\u8BE2\u670D\u52A1\u548C\u6CE8\u518C\u670D\u52A1\u90FD\u9700\u8981\u4F9D\u8D56\u8FD9\u4E2A\u5730\u5740\u3002\u9ED8\u8BA4\u662Fhttp://localhost:8761(UI\u754C\u9762)/eureka \uFF1B\u591A\u4E2A\u5730\u5740\u53EF\u4F7F\u7528 , \u5206\u9694\u3002
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
+  instance:
+    hostname: localhost
+spring:
+  application:
+    name: configServer
+    #配置github地址
+  cloud:
+    config:
+      server:
+        git:
+          #服务的git仓库地址
+          uri: https://github.com/xxlxuxiling/config.git
+          #配置文件所在的目录
+          search-paths: /**
+
+      label: master
+
+
+
+

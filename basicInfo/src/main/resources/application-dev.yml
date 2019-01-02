@@ -1,0 +1,24 @@
+# 开发环境配置
+spring:
+  datasource:
+    jdbc-url:  jdbc:mysql://localhost:3306/basic_info?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: admin
+    driver-class-name: com.mysql.jdbc.Driver
+    # Hikari will use the above plus the following to setup connection pooling
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      minimum-idle: 5
+      maximum-pool-size: 15
+      auto-commit: true
+      idle-timeout: 30000
+      pool-name: DatebookHikariCP
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      connection-test-query: select 1
+
+
+  security:
+    user:
+      name: admin
+      password: admin
