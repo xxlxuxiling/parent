@@ -1,6 +1,7 @@
 package com.schcilin.goods.controller;
 
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.schcilin.goods.service.ZbglIncidentService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +25,11 @@ public class ZbglIncidentContrroller {
 
     @Autowired
     private ZbglIncidentService zbglIncidentService;
+    public String processHystrix_Get() {
+        return "微服务不可用";
+    }
+    // //一旦调用服务方法失败抛出“错误信息后，自动调用用@HystrixCommand标注好的fallbackMethod调用类中的指定方法”
+    @HystrixCommand(fallbackMethod = "processHystrix_Get")
     @GetMapping(value = "/demo", produces = "application/json")
     public String demo() {
 
