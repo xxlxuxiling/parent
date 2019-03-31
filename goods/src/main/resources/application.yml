@@ -2,7 +2,6 @@ server:
   port: 8076
 
 
-
 #\u8BBE\u7F6E\u4E0D\u80FD\u8BA9\u81EA\u5DF1\u68C0\u67E5\u81EA\u5DF1\u53D1\u73B0\u670D\u52A1\u6CE8\u518C
 eureka:
   client:
@@ -48,5 +47,7 @@ mybatis-plus:
   configuration:
     map-underscore-to-camel-case: true
     cache-enabled: false
-
-
+#数据库加密盐
+jasypt:
+  encryptor:
+    password: admin

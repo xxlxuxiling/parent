@@ -1,5 +1,6 @@
 package com.schcilin.goods;
 
+import com.ulisesbocchio.jasyptspringboot.annotation.EnableEncryptableProperties;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.cloud.client.SpringCloudApplication;
@@ -8,12 +9,13 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-
+@EnableEncryptableProperties//开启数据库加密配置，不开启访问时需要密码错误
 @SpringCloudApplication
 @EnableTransactionManagement//开启事务
 @RestController
 public class GoodsApplication {
-    @Value("${app.name.name}")
+
+   // @Value("${app.name.name}")
     private String name;
 
     public static void main(String[] args) {
@@ -21,7 +23,7 @@ public class GoodsApplication {
     }
     @GetMapping("/test")
     public String test() {
-        return name;
+        return "cehsi";
     }
    // @Bean
     public static PropertySourcesPlaceholderConfigurer placeholderConfigurer() {
