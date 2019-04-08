@@ -1,0 +1,10 @@
+#springcloud-config配置
+spring:
+  cloud:
+    config:
+      discovery:
+        service-id: configServer
+        enabled: true
+      label: master
+      profile: dev
+      name: application

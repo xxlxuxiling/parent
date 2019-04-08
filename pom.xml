@@ -45,7 +45,6 @@
             <version>2.1.1</version>
         </dependency>
 
-
     </dependencies>
     <!--主要作用是jar包的版本冲突交给spring来管理-->
     <dependencyManagement>

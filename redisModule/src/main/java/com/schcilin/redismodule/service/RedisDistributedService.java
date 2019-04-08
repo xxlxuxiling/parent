@@ -24,7 +24,7 @@ public class RedisDistributedService {
 
     private static final String LOCKED_SUCCESS = "OK";
     private static final String SET_IF_NOT_EXIST  = "NX";
-    private static final String EXPIRE_TIME = "PX";
+    private static final String SET_WITH_EXPIRE_TIME  = "PX";
 
     private static final Long RELEASE_SUCCESS = 1L;
 
@@ -50,7 +50,7 @@ public class RedisDistributedService {
      * @return 是否获取到锁
      */
     public  boolean tryDistributedLock(Jedis jedis, String lockkey, String uniqueId, long expireTime) {
-        String result = jedis.set(lockkey, uniqueId, SET_IF_NOT_EXIST, EXPIRE_TIME, expireTime);
+        String result = jedis.set(lockkey, uniqueId, SET_IF_NOT_EXIST, SET_WITH_EXPIRE_TIME , expireTime);
         return LOCKED_SUCCESS.equals(result);
 
     }

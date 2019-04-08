@@ -8,7 +8,9 @@ import com.google.common.hash.Funnels;
  * @Date: 2018/11/21 21:00
  * @Description:
  */
-public class BloomFilterTest {
+public class
+
+BloomFilterTest {
     private static final int capacity = 1000000;
     private static final int key = 999998;
     private static BloomFilter<Integer> bloomFilter = BloomFilter.create(Funnels.integerFunnel(), capacity);
