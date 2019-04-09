@@ -4,7 +4,7 @@ package com.schcilin.tcctransactions.exception;
  * rest api 统一异常
  */
 public class RestStatusException extends RuntimeException {
-    static final long serialVersionUID = -7034897190745766930L;
+    private static final long serialVersionUID = -7034897190745766930L;
 
     public RestStatusException(String message) {
         super(message);

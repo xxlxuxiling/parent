@@ -1,10 +1,5 @@
 package com.schcilin.tcctransactions.constant;
 
-import lombok.Getter;
-
-import java.util.Arrays;
-import java.util.Optional;
-
 /**
  * 自定义返回状态码
  */
