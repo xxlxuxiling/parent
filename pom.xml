@@ -25,6 +25,7 @@
         <module>redisModule</module>
         <module>goods</module>
         <module>basicInfo</module>
+        <module>zuul</module>
     </modules>
 
     <dependencies>
