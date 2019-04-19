@@ -1,1 +1,39 @@
+#\u5E94\u7528\u7AEF\u53E3
+server:
+  port: 8080
+
+#\u5E94\u7528\u540D\u79F0
+spring:
+  application:
+    name: zuulGatway
+
+
+zuul:
+  host:
+    connect-timeout-millis: 2000
+    socket-timeout-millis: 6000
+  routes:
+    login:
+      path: /login/*
+      sensitiveHeaders: "*"
+      serviceId: loginApp
+
+    uaa:
+      path: /uaa/*
+      serviceId: auth2
+        strip-prefix: true
+        custom-sensitive-headers: true
+
+
+
+#auth2\u914D\u7F6E
+security:
+  oauth2:
+    client:
+      access-token-uri: http://localhost:${server.port}/uaa/oauth/token
+      user-authorization-uri: http://localhost:${server.port}/uaa/oauth/authorize
+      client-id: open-api
+    resource:
+      user-info-uri: http://localhost:${server.port}/uaa/user
+      prefer-token-info: false
 
