@@ -1,0 +1,15 @@
+server:
+  port: 8099
+
+#\u5411eureka\u6CE8\u518C
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      #\u6CE8\u518C\u5730\u5740
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+spring:
+  application:
+    name: sysUserService

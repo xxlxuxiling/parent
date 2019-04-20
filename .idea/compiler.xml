@@ -11,6 +11,10 @@
         <module name="eureka" />
         <module name="goods" />
         <module name="redisModule" />
+        <module name="redismodule" />
+        <module name="sysuser" />
+        <module name="tcc-transactions" />
+        <module name="zuul" />
       </profile>
     </annotationProcessing>
   </component>

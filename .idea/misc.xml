@@ -13,6 +13,8 @@
         <option value="$PROJECT_DIR$/goods/pom.xml" />
         <option value="$PROJECT_DIR$/basicInfo/pom.xml" />
         <option value="$PROJECT_DIR$/configServer/pom.xml" />
+        <option value="$PROJECT_DIR$/common_server/pom.xml" />
+        <option value="$PROJECT_DIR$/sysuser/pom.xml" />
       </list>
     </option>
   </component>

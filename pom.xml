@@ -24,8 +24,11 @@
         <module>eureka</module>
         <module>redisModule</module>
         <module>goods</module>
+        <module>common_server</module>
         <module>basicInfo</module>
         <module>zuul</module>
+        <module>tcc-transactions</module>
+        <module>sysuser</module>
     </modules>
 
     <dependencies>

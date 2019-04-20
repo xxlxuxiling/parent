@@ -3,7 +3,7 @@ spring:
   datasource:
     jdbc-url:  jdbc:mysql://localhost:3306/demo?useUnicode=true&characterEncoding=UTF-8&useSSL=false
     username: root
-    password: admin
+    password: '/CT77CqYkn/dwvzxjzGdBg=='
     driver-class-name: com.mysql.jdbc.Driver
     # Hikari will use the above plus the following to setup connection pooling
     type: com.zaxxer.hikari.HikariDataSource
