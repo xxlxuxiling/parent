@@ -3,6 +3,7 @@ package com.schcilin.zuul.feign;
 import com.schcilin.common_server.dto.user.SysUserDTO;
 import com.schcilin.common_server.protocol.Result;
 import com.schcilin.common_server.vo.user.SysUserVO;
+import com.schcilin.zuul.config.ZuulCustomFeignClientConfig;
 import com.schcilin.zuul.feign.impl.SysUserClientFallBack;
 import com.schcilin.zuul.model.SysUserAuthentication;
 import org.springframework.cloud.openfeign.FeignClient;
@@ -14,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
  * @Version 1.0
  * @des:
  */
-@FeignClient(value = "sysUserService",fallback = SysUserClientFallBack.class)
+@FeignClient(value = "sysUserService",fallback = SysUserClientFallBack.class,configuration = ZuulCustomFeignClientConfig.class)
 public interface SysUserClient {
     /**
      * 通过用户名查询用户、角色信息
