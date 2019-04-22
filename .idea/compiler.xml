@@ -7,15 +7,22 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="basicInfo" />
+        <module name="basicinfo" />
+        <module name="configserver" />
         <module name="configServer" />
         <module name="eureka" />
         <module name="goods" />
         <module name="redisModule" />
         <module name="redismodule" />
-        <module name="sysuser" />
         <module name="tcc-transactions" />
         <module name="zuul" />
       </profile>
     </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="tcc-transactions" options="" />
+      <module name="zuul" options="" />
+    </option>
   </component>
 </project>
