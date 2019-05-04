@@ -16,7 +16,7 @@ import java.io.Serializable;
 public class SysUserAuthentication implements Serializable {
 
     private static final long serialVersionUID = -3332151368471216089L;
-    private Long id;
+    private String id;
 
     private String username;
 

@@ -37,3 +37,8 @@ security:
       user-info-uri: http://localhost:${server.port}/uaa/user
       prefer-token-info: false
 
+#jwt token签名
+self:
+  jwt:
+    sign:
+      key: shchilin
