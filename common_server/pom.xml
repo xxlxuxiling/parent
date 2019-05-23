@@ -106,13 +106,13 @@
             <scope>runtime</scope>
         </dependency>
         <!-- End of DB related -->
-        <!--hutool工具类-->
+        <!--hutool工具类begin-->
         <dependency>
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
             <version>4.5.7</version>
         </dependency>
-
+        <!--hutool工具类end-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>

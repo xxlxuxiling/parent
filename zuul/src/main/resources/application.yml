@@ -21,8 +21,7 @@ zuul:
     uaa:
       path: /uaa/*
       serviceId: auth2
-        strip-prefix: true
-        custom-sensitive-headers: true
+
 
 
 
@@ -42,3 +41,5 @@ self:
   jwt:
     sign:
       key: shchilin
+    token:
+      validity: 3600

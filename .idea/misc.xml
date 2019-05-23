@@ -15,6 +15,9 @@
         <option value="$PROJECT_DIR$/configServer/pom.xml" />
         <option value="$PROJECT_DIR$/common_server/pom.xml" />
         <option value="$PROJECT_DIR$/sysuser/pom.xml" />
+        <option value="$PROJECT_DIR$/pay-server/pom.xml" />
+        <option value="$PROJECT_DIR$/job-server/pom.xml" />
+        <option value="$PROJECT_DIR$/mq-transation/pom.xml" />
       </list>
     </option>
   </component>

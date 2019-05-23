@@ -12,6 +12,7 @@ import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
 import javax.servlet.http.HttpServletRequest;
+import java.io.File;
 import java.lang.reflect.Field;
 import java.util.*;
 
@@ -68,7 +69,9 @@ public class ZuulCustomFeignClientConfig implements RequestInterceptor {
             }
         }
 
+        Map<String,Object> hashMap = new HashMap();
         return map;
+
     }
 
     /**

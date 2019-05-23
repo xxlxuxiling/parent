@@ -30,6 +30,7 @@
         <module>tcc-transactions</module>
         <module>sysuser</module>
         <module>pay-server</module>
+        <module>mq-transation</module>
     </modules>
 
     <dependencies>
