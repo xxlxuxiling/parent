@@ -69,7 +69,7 @@ public class RedisDBCoordinatorImpl implements DBCoordinator {
     }
 
     @Override
-    public List getMsgReady() throws Exception {
+    public List<RabbitMetaMessage> getMsgReady() throws Exception {
         HashOperations hashOperations = redisTemplate.opsForHash();
         List<RabbitMetaMessage> messages = hashOperations.values(MQConstant.MQ_MSG_READY);
         List<RabbitMetaMessage> messageAlert = new ArrayList();

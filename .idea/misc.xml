@@ -1,27 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="FrameworkDetectionExcludesConfiguration">
-    <file type="web" url="file://$PROJECT_DIR$" />
-  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/eureka/pom.xml" />
-        <option value="$PROJECT_DIR$/redisModule/pom.xml" />
-        <option value="$PROJECT_DIR$/goods/pom.xml" />
-        <option value="$PROJECT_DIR$/basicInfo/pom.xml" />
-        <option value="$PROJECT_DIR$/configServer/pom.xml" />
-        <option value="$PROJECT_DIR$/common_server/pom.xml" />
-        <option value="$PROJECT_DIR$/sysuser/pom.xml" />
-        <option value="$PROJECT_DIR$/pay-server/pom.xml" />
-        <option value="$PROJECT_DIR$/job-server/pom.xml" />
-        <option value="$PROJECT_DIR$/mq-transation/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

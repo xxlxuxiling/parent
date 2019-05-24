@@ -24,7 +24,7 @@ public interface DBCoordinator {
     RabbitMetaMessage getMetaMsg(String msgId);
 
     /**获取ready状态消息*/
-    List getMsgReady() throws Exception;
+    List<RabbitMetaMessage> getMsgReady() throws Exception;
 
     /**获取prepare状态消息*/
     List getMsgPrepare() throws Exception;
