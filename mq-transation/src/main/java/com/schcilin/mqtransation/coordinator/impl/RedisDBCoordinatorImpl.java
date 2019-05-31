@@ -12,12 +12,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.HashOperations;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.SetOperations;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.time.temporal.TemporalAccessor;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
@@ -28,7 +25,7 @@ import java.util.Set;
  * @Description //TODO $
  * @Date $ $
  **/
-@Service
+@Component("RedisDBCoordinator")
 @Slf4j
 public class RedisDBCoordinatorImpl implements DBCoordinator {
     @Autowired
@@ -38,6 +35,11 @@ public class RedisDBCoordinatorImpl implements DBCoordinator {
     public void setMsgPrepare(String msgId) {
         redisTemplate.opsForSet().add(MQConstant.MQ_MSG_PREPARE, msgId);
 
+    }
+
+    @Override
+    public void deleteMsgPrepare(String msgId) {
+        redisTemplate.opsForSet().remove(MQConstant.MQ_MSG_PREPARE, msgId);
     }
 
     /**
@@ -86,6 +88,7 @@ public class RedisDBCoordinatorImpl implements DBCoordinator {
         return messageAlert;
     }
 
+
     @Override
     public List getMsgPrepare() throws Exception {
         SetOperations setOperations = redisTemplate.opsForSet();
@@ -109,13 +112,19 @@ public class RedisDBCoordinatorImpl implements DBCoordinator {
 
     @Override
     public Long getResendValue(String key, String hashKey) {
-        return (Long) redisTemplate.opsForHash().get(key, hashKey);
+        return this.redisTemplate.opsForHash().increment(key, hashKey,1L);
+    }
+
+
+    @Override
+    public Long deleteResendKey(String key, String hashKey) {
+        return this.redisTemplate.opsForHash().delete(key,hashKey);
     }
 
     boolean messageTimeOut(String messageId) throws Exception {
         String messageTime = (messageId.split(MQConstant.DB_SPLIT))[1];
         long timeGap = System.currentTimeMillis() -
-                new SimpleDateFormat("yyyy-mm-dd HH:mm:ss").parse(messageTime).getTime();
+                new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse(messageTime).getTime();
         if (timeGap > MQConstant.TIME_GAP) {
             return true;
         }

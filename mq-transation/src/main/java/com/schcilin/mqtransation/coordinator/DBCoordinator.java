@@ -13,6 +13,8 @@ public interface DBCoordinator {
 
     /**设置消息为prepare状态*/
     void setMsgPrepare(String msgId);
+    /**设置消息为prepare状态*/
+    void deleteMsgPrepare(String msgId);
 
     /**设置消息为ready状态，删除prepare状态*/
     void setMsgReady(String msgId, RabbitMetaMessage rabbitMetaMessage);
@@ -26,6 +28,7 @@ public interface DBCoordinator {
     /**获取ready状态消息*/
     List<RabbitMetaMessage> getMsgReady() throws Exception;
 
+
     /**获取prepare状态消息*/
     List getMsgPrepare() throws Exception;
 
@@ -33,4 +36,7 @@ public interface DBCoordinator {
     Long incrResendKey(String key, String hashKey);
 
     Long getResendValue(String key, String hashKey);
+
+    /**删除redis重试统计次数key*/
+    Long deleteResendKey(String key, String hashKey);
 }

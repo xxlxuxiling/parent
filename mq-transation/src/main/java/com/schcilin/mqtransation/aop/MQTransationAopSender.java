@@ -4,6 +4,7 @@ import com.schcilin.mqtransation.anno.MQTransationMessageAnno;
 import com.schcilin.mqtransation.constant.MQConstant;
 import com.schcilin.mqtransation.coordinator.DBCoordinator;
 import com.schcilin.mqtransation.pojo.RabbitMetaMessage;
+import com.schcilin.mqtransation.sender.MQTransation4Bug2ReSend;
 import com.schcilin.mqtransation.sender.MQTransationSender;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -34,6 +35,9 @@ public class MQTransationAopSender {
     @Autowired
     ApplicationContext applicationContext;
 
+    @Autowired
+    private MQTransation4Bug2ReSend mqTransation4Bug2ReSend;
+
     /**
      * 定义注解类型的切点，只要方法上有该注解，都会匹配
      */
@@ -62,6 +66,8 @@ public class MQTransationAopSender {
         try {
             returnObj = joinPoint.proceed();
         } catch (Exception e) {
+            //业务信息异常，删除redis中prepare状态信息
+            dbCoordinator.deleteMsgPrepare(bizName);
             log.error("业务执行失败,业务名称:" + bizName);
             throw e;
         }
@@ -77,23 +83,33 @@ public class MQTransationAopSender {
         rabbitMetaMessage.setRoutingKey(bindingKey);
         /** 设置需要传递的消息体,可以是任意对象 */
         rabbitMetaMessage.setPayload(returnObj);
-        /** 将消息设置为ready状态*/
+        /** 将消息设置为ready状态，此时必须保证redis服务器可用*/
         dbCoordinator.setMsgReady(bizName, rabbitMetaMessage);
 
         /** 发送消息 */
         try {
             /**保存消息载体*/
             this.mqTransationSender.setCorrelationData(coordinator);
+            //此时业务执行成功，必须向mq发送消息
+            //int i =1/0;
             this.mqTransationSender.send(rabbitMetaMessage);
         } catch (Exception e) {
-            log.error("第一阶段消息发送异常" + bizName, e);
-            throw e;
+            log.error("第四阶段消息ID:{}发送异常，此时本地事务已经执行完成，向RabbitMQ发送消息必须成功", bizName, e);
+            Long increment = dbCoordinator.incrResendKey(MQConstant.MQ_PROVIDER_RETRY_COUNT_KEY, bizName);
+            log.error("生产者成功生产消息ID->{}，同时添加redis中的统计{}次", bizName, increment);
+            try {
+
+                this.mqTransation4Bug2ReSend.reSendMsg4Bug(bizName);
+            } catch (Exception ee) {
+                ee.printStackTrace();
+            }
+
         }
 
     }
 
     private String getCurrentDateTime() {
-        DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd HH:mm:ss");
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         return dateFormat.format(new Date());
     }
 }

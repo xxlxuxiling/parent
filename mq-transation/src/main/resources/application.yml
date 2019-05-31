@@ -3,6 +3,7 @@ server:
 
 
 
+
 #\u5411eureka\u6CE8\u518C
 eureka:
   client:
@@ -10,26 +11,31 @@ eureka:
     fetch-registry: true
     service-url:
       #\u6CE8\u518C\u5730\u5740
-      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
-  instance:
-    hostname: localhost
+      defaultZone: http://localhost:8761/eureka/
+
 spring:
   application:
     name: mqTransation
 
-#mq\u914D\u7F6E
+#mq配置H
   rabbitmq:
     host: 192.168.1.78
     port: 5672
-    username: root
+    username: admin
     password: admin
     #\u5730\u5740\u865A\u62DF\u7A7A\u95F4
-    virtual-host: /mqhostv
+    virtual-host: /
     #\u5F00\u542F\u6D88\u606F\u786E\u8BA4\u673A\u5236 confirms
     publisher-confirms: true
     publisher-returns: true
 
 
- #\u5F00\u53D1\u73AF\u5883
+ #使用环境
   profiles:
     active: dev
+
+
+#redis配置
+  redis:
+    host: 127.0.0.1
+    port: 6379

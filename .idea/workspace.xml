@@ -2,22 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be7e0f62-f5b0-44ac-8d39-2d024f275f86" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/config/RabbitTemplateConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/listener/AbstractRabbitMQMessageListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/sender/MQTransation4Bug2ReSend.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/githubproject.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/TestService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/artificial/MQTransation4Bug2ReSendController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/artificial/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/config/BizQueueConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/config/XxlQueueConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/consumer/BizMQTransationMessageListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/consumer/XxlMQTransationMessageListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/provider/MQTransationMessageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mq-transation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mq-transation/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/aop/MQTransationAopSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/aop/MQTransationAopSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/config/CompleteCorrelationData.java" beforeDir="false" afterPath="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/config/CompleteCorrelationData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/constant/MQConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/constant/MQConstant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/coordinator/DBCoordinator.java" beforeDir="false" afterPath="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/coordinator/DBCoordinator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/coordinator/impl/RedisDBCoordinatorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/coordinator/impl/RedisDBCoordinatorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/listener/AbstractRabbitMQMessageListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/listener/AbstractRabbitMQMessageListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/pojo/RabbitMetaMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/pojo/RabbitMetaMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/sender/MQTransation4Bug2ReSend.java" beforeDir="false" afterPath="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/sender/MQTransation4Bug2ReSend.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/sender/MQTransationSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/sender/MQTransationSender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parent.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mq-transation/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mq-transation/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mq-transation/src/test/java/com/schcilin/mqtransation/MqTransationApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mq-transation/src/test/java/com/schcilin/mqtransation/MqTransationApplicationTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/goods/target/" />
     <ignored path="$PROJECT_DIR$/common_server/target/" />
@@ -37,38 +43,57 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/config/RabbitTemplateConfig.java">
+        <entry file="file://$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/sender/MQTransation4Bug2ReSend.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="50" column="85" lean-forward="true" selection-start-line="50" selection-start-column="85" selection-end-line="50" selection-end-column="85" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2705#2706#0" expanded="true" />
-                <element signature="e#2762#2763#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/listener/AbstractRabbitMQMessageListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="43">
+              <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/constant/MQConstant.java">
+        <entry file="file://$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/artificial/MQTransation4Bug2ReSendController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+            <state relative-caret-position="397">
+              <caret line="56" column="31" lean-forward="true" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/pojo/RabbitMetaMessage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="103">
+              <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/consumer/BizMQTransationMessageListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/provider/MQTransationMessageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="16" column="133" selection-start-line="16" selection-start-column="133" selection-end-line="16" selection-end-column="133" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -76,8 +101,42 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/coordinator/DBCoordinator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+            <state relative-caret-position="473">
+              <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mq-transation/src/test/java/com/schcilin/mqtransation/MqTransationApplicationTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+              <folding>
+                <element signature="e#474#475#0" expanded="true" />
+                <element signature="e#501#502#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/aop/MQTransationAopSender.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="97" column="10" selection-start-line="97" selection-start-column="10" selection-end-line="98" selection-end-column="78" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/sender/MQTransationSender.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-12">
+              <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -85,35 +144,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/coordinator/impl/RedisDBCoordinatorImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="62" column="74" lean-forward="true" selection-start-line="62" selection-start-column="74" selection-end-line="62" selection-end-column="74" />
+            <state relative-caret-position="317">
+              <caret line="120" column="67" lean-forward="true" selection-start-line="120" selection-start-column="67" selection-end-line="120" selection-end-column="67" />
               <folding>
-                <element signature="e#1686#1687#0" expanded="true" />
-                <element signature="e#1767#1768#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1168#1169#0" expanded="true" />
+                <element signature="e#1250#1251#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://E:/software/maven3.6/repository/org/springframework/amqp/spring-rabbit/2.1.6.RELEASE/spring-rabbit-2.1.6.RELEASE-sources.jar!/org/springframework/amqp/rabbit/core/RabbitTemplate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="2717" column="29" lean-forward="true" selection-start-line="2717" selection-start-column="29" selection-end-line="2718" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mq-transation/src/main/resources/application-dev.yml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mq-transation/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -123,9 +160,22 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>无消息存储类，事务执行终止</find>
+      <find>mq发送错误，无对应的的交换机</find>
+      <find>MQTransationMessageAnno</find>
+      <find>bindingKey</find>
+      <find>消息已正确投递到RabbitMQ队列</find>
+      <find>getMetaMsg</find>
+      <find>getMsgReady</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -135,8 +185,27 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/config/RabbitTemplateConfig.java" />
+        <option value="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/config/CompleteCorrelationData.java" />
+        <option value="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/config/BizqueueConfig.java" />
+        <option value="$PROJECT_DIR$/mq-transation/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/provider/MQTransationMessageController.java" />
         <option value="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/listener/AbstractRabbitMQMessageListener.java" />
+        <option value="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/Test.java" />
+        <option value="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/consumer/XxlMQTransationMessageListener.java" />
+        <option value="$PROJECT_DIR$/mq-transation/src/test/java/com/schcilin/mqtransation/MqTransationApplicationTests.java" />
+        <option value="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/consumer/BizMQTransationMessageListener.java" />
+        <option value="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/config/BizQueueConfig.java" />
+        <option value="$PROJECT_DIR$/mq-transation/pom.xml" />
+        <option value="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/config/XxlQueueConfig.java" />
+        <option value="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/TestService.java" />
         <option value="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/constant/MQConstant.java" />
+        <option value="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/sender/MQTransationSender.java" />
+        <option value="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/coordinator/DBCoordinator.java" />
+        <option value="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/coordinator/impl/RedisDBCoordinatorImpl.java" />
+        <option value="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/pojo/RabbitMetaMessage.java" />
+        <option value="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/aop/MQTransationAopSender.java" />
+        <option value="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/sender/MQTransation4Bug2ReSend.java" />
+        <option value="$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/artificial/MQTransation4Bug2ReSendController.java" />
       </list>
     </option>
   </component>
@@ -171,6 +240,79 @@
             <path>
               <item name="parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="githubproject" type="462c0819:PsiDirectoryNode" />
+              <item name="basicInfo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="githubproject" type="462c0819:PsiDirectoryNode" />
+              <item name="basicInfo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="githubproject" type="462c0819:PsiDirectoryNode" />
+              <item name="basicInfo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="githubproject" type="462c0819:PsiDirectoryNode" />
+              <item name="basicInfo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="githubproject" type="462c0819:PsiDirectoryNode" />
+              <item name="basicInfo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="basicInfo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="githubproject" type="462c0819:PsiDirectoryNode" />
+              <item name="basicInfo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="basicInfo" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="githubproject" type="462c0819:PsiDirectoryNode" />
+              <item name="basicInfo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="basicInfo" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="githubproject" type="462c0819:PsiDirectoryNode" />
+              <item name="basicInfo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="basicInfo" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="githubproject" type="462c0819:PsiDirectoryNode" />
+              <item name="basicInfo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="githubproject" type="462c0819:PsiDirectoryNode" />
               <item name="mq-transation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -211,7 +353,37 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mqtransation" type="462c0819:PsiDirectoryNode" />
-              <item name="constant" type="462c0819:PsiDirectoryNode" />
+              <item name="aop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="githubproject" type="462c0819:PsiDirectoryNode" />
+              <item name="mq-transation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mqtransation" type="462c0819:PsiDirectoryNode" />
+              <item name="artificial" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="githubproject" type="462c0819:PsiDirectoryNode" />
+              <item name="mq-transation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mqtransation" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="githubproject" type="462c0819:PsiDirectoryNode" />
+              <item name="mq-transation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mqtransation" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="parent" type="b2602c69:ProjectViewProjectNode" />
@@ -242,7 +414,27 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mqtransation" type="462c0819:PsiDirectoryNode" />
-              <item name="listener" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="githubproject" type="462c0819:PsiDirectoryNode" />
+              <item name="mq-transation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mqtransation" type="462c0819:PsiDirectoryNode" />
+              <item name="provider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="githubproject" type="462c0819:PsiDirectoryNode" />
+              <item name="mq-transation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mqtransation" type="462c0819:PsiDirectoryNode" />
+              <item name="sender" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="parent" type="b2602c69:ProjectViewProjectNode" />
@@ -254,75 +446,137 @@
             </path>
             <path>
               <item name="parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="githubproject" type="462c0819:PsiDirectoryNode" />
+              <item name="mq-transation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="githubproject" type="462c0819:PsiDirectoryNode" />
+              <item name="mq-transation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="githubproject" type="462c0819:PsiDirectoryNode" />
+              <item name="mq-transation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mqtransation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
             <path>
               <item name="parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework.amqp:spring-rabbit:2.1.6.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="Maven: org.springframework.data:spring-data-redis:2.0.11.RELEASE" type="70bed36:NamedLibraryElementNode" />
             </path>
             <path>
               <item name="parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework.amqp:spring-rabbit:2.1.6.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-rabbit-2.1.6.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="Maven: org.springframework.data:spring-data-redis:2.0.11.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-data-redis-2.0.11.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework.amqp:spring-rabbit:2.1.6.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-rabbit-2.1.6.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="rabbit" type="462c0819:PsiDirectoryNode" />
+              <item name="Maven: org.springframework.data:spring-data-redis:2.0.11.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-data-redis-2.0.11.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework.amqp:spring-rabbit:2.1.6.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-rabbit-2.1.6.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="rabbit" type="462c0819:PsiDirectoryNode" />
-              <item name="connection" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework.amqp:spring-rabbit:2.1.6.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-rabbit-2.1.6.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="rabbit" type="462c0819:PsiDirectoryNode" />
+              <item name="Maven: org.springframework.data:spring-data-redis:2.0.11.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-data-redis-2.0.11.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework.amqp:spring-rabbit:2.1.6.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-rabbit-2.1.6.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="rabbit" type="462c0819:PsiDirectoryNode" />
-              <item name="listener" type="462c0819:PsiDirectoryNode" />
+              <item name="Maven: org.springframework:spring-aop:5.0.10.RELEASE" type="70bed36:NamedLibraryElementNode" />
             </path>
             <path>
               <item name="parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework.amqp:spring-rabbit:2.1.6.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-rabbit-2.1.6.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="rabbit" type="462c0819:PsiDirectoryNode" />
-              <item name="listener" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="Maven: org.springframework:spring-aop:5.0.10.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-aop-5.0.10.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-aop:5.0.10.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-aop-5.0.10.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-aop:5.0.10.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-aop-5.0.10.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="aop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-aop:5.0.10.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-aop-5.0.10.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="aop" type="462c0819:PsiDirectoryNode" />
+              <item name="aspectj" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-aop:5.0.10.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-aop-5.0.10.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="aop" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-aop:5.0.10.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-aop-5.0.10.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="aop" type="462c0819:PsiDirectoryNode" />
+              <item name="interceptor" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558692812007" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559297242951" />
     <property name="last_opened_file_path" value="E:/ideaProject" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.schcilin.mqtransation.consumer" />
+      <recent name="com.schcilin.mqtransation.config" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -336,7 +590,70 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GoodsApplication">
+  <component name="RunManager" selected="JUnit.MqTransationApplicationTests.testXxl">
+    <configuration name="MqTransationApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mq-transation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.schcilin.mqtransation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.schcilin.mqtransation" />
+      <option name="MAIN_CLASS_NAME" value="com.schcilin.mqtransation.MqTransationApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MqTransationApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mq-transation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.schcilin.mqtransation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.schcilin.mqtransation" />
+      <option name="MAIN_CLASS_NAME" value="com.schcilin.mqtransation.MqTransationApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MqTransationApplicationTests.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mq-transation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.schcilin.mqtransation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.schcilin.mqtransation" />
+      <option name="MAIN_CLASS_NAME" value="com.schcilin.mqtransation.MqTransationApplicationTests" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MqTransationApplicationTests.testXxl" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mq-transation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.schcilin.mqtransation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.schcilin.mqtransation" />
+      <option name="MAIN_CLASS_NAME" value="com.schcilin.mqtransation.MqTransationApplicationTests" />
+      <option name="METHOD_NAME" value="testXxl" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BasicinfoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="basicinfo" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.schcilin.basicInfo.BasicinfoApplication" />
@@ -407,6 +724,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MqTransationApplicationTests.testXxl" />
+        <item itemvalue="JUnit.MqTransationApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.MqTransationApplicationTests.test" />
+        <item itemvalue="JUnit.MqTransationApplicationTests" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -418,145 +743,489 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558678375186</updated>
-      <workItem from="1558678383041" duration="7854000" />
+      <workItem from="1558678383041" duration="8457000" />
+      <workItem from="1558919323351" duration="30941000" />
+      <workItem from="1559099795717" duration="623000" />
+      <workItem from="1559101385703" duration="17195000" />
+      <workItem from="1559178511156" duration="8066000" />
+      <workItem from="1559264845115" duration="16301000" />
     </task>
+    <task id="LOCAL-00001" summary="消息事务">
+      <created>1558692838513</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1558692838513</updated>
+    </task>
+    <task id="LOCAL-00002" summary="消息事务">
+      <created>1558692873046</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1558692873046</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="MqTransationApplicationTests_testXxl - 2019.05.29 at 15h 56m 08s.xml">
+      <configuration name="MqTransationApplicationTests.testXxl" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MqTransationApplicationTests_testXxl - 2019.05.29 at 15h 57m 53s.xml">
+      <configuration name="MqTransationApplicationTests.testXxl" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MqTransationApplicationTests_testXxl - 2019.05.29 at 16h 54m 34s.xml">
+      <configuration name="MqTransationApplicationTests.testXxl" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MqTransationApplicationTests_testXxl - 2019.05.29 at 17h 09m 18s.xml">
+      <configuration name="MqTransationApplicationTests.testXxl" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MqTransationApplicationTests_testXxl - 2019.05.31 at 14h 25m 59s.xml">
+      <configuration name="MqTransationApplicationTests.testXxl" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MqTransationApplicationTests_testXxl - 2019.05.31 at 14h 27m 34s.xml">
+      <configuration name="MqTransationApplicationTests.testXxl" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MqTransationApplicationTests_testXxl - 2019.05.31 at 14h 39m 21s.xml">
+      <configuration name="MqTransationApplicationTests.testXxl" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MqTransationApplicationTests_testXxl - 2019.05.31 at 14h 45m 38s.xml">
+      <configuration name="MqTransationApplicationTests.testXxl" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MqTransationApplicationTests_testXxl - 2019.05.31 at 14h 47m 12s.xml">
+      <configuration name="MqTransationApplicationTests.testXxl" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MqTransationApplicationTests_testXxl - 2019.05.31 at 16h 00m 14s.xml">
+      <configuration name="MqTransationApplicationTests.testXxl" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7854000" />
+    <option name="totallyTimeSpent" value="81583000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="Capture Tool" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Web" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18454936" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15879828" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" />
-      <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Java Enterprise" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Bean Validation" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.20111111" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="消息事务" />
+    <option name="LAST_COMMIT_MESSAGE" value="消息事务" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mq-transation/src/main/resources/application-dev.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mq-transation/src/main/resources/application.yml">
+    <entry file="jar://E:/software/maven3.6/repository/org/springframework/amqp/spring-amqp/2.0.8.RELEASE/spring-amqp-2.0.8.RELEASE.jar!/org/springframework/amqp/core/Queue.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+        <state relative-caret-position="346">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="84" />
+          <folding>
+            <element signature="e#478#479#0" expanded="true" />
+            <element signature="e#524#525#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://E:/software/maven3.6/repository/org/springframework/amqp/spring-rabbit/2.1.6.RELEASE/spring-rabbit-2.1.6.RELEASE.jar!/org/springframework/amqp/rabbit/core/RabbitTemplate.class">
+    <entry file="jar://E:/software/maven3.6/repository/org/springframework/amqp/spring-amqp/2.0.8.RELEASE/spring-amqp-2.0.8.RELEASE.jar!/org/springframework/amqp/core/AcknowledgeMode.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="241" column="16" selection-start-line="241" selection-start-column="16" selection-end-line="241" selection-end-column="16" />
+        <state relative-caret-position="114">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basicInfo/src/main/java/com/schcilin/basicInfo/BasicinfoApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mq-transation/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://E:/software/maven3.6/repository/org/springframework/amqp/spring-rabbit/2.0.12.RELEASE/spring-rabbit-2.0.12.RELEASE.jar!/org/springframework/amqp/rabbit/core/RabbitTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="519" column="16" selection-start-line="519" selection-start-column="16" selection-end-line="519" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/software/maven3.6/repository/org/springframework/data/spring-data-redis/2.0.11.RELEASE/spring-data-redis-2.0.11.RELEASE.jar!/org/springframework/data/redis/core/DefaultHashOperations.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="135" column="16" selection-start-line="135" selection-start-column="16" selection-end-line="135" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basicInfo/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="53" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basicInfo/src/main/java/com/schcilin/basicInfo/controller/TUserContrroller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basicInfo/src/main/java/com/schcilin/basicInfo/controller/TRoleContrroller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basicInfo/src/main/java/com/schcilin/basicInfo/mapper/TRoleMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basicInfo/src/main/java/com/schcilin/basicInfo/service/TUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basicInfo/src/main/java/com/schcilin/basicInfo/service/TRoleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common_server/src/main/java/com/schcilin/common_server/CommonServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basicInfo/src/main/java/com/schcilin/basicInfo/entity/TRole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basicInfo/src/main/java/com/schcilin/basicInfo/entity/TUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basicInfo/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basicInfo/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://E:/software/maven3.6/repository/org/springframework/spring-aop/5.0.10.RELEASE/spring-aop-5.0.10.RELEASE.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/software/maven3.6/repository/org/springframework/spring-aop/5.0.10.RELEASE/spring-aop-5.0.10.RELEASE.jar!/org/springframework/aop/aspectj/AspectJAroundAdvice.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/software/maven3.6/repository/org/springframework/amqp/spring-amqp/2.0.8.RELEASE/spring-amqp-2.0.8.RELEASE.jar!/org/springframework/amqp/support/ConsumerTagStrategy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="9" column="42" lean-forward="true" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mq-transation/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="84" column="21" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/software/maven3.6/repository/org/springframework/amqp/spring-rabbit/2.0.12.RELEASE/spring-rabbit-2.0.12.RELEASE.jar!/org/springframework/amqp/rabbit/listener/AbstractMessageListenerContainer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="1011" selection-start-line="1011" selection-end-line="1011" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/TestService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
           <folding>
-            <element signature="e#11214#11215#0" expanded="true" />
-            <element signature="e#11287#11288#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#849#850#0" expanded="true" />
+            <element signature="e#890#891#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/anno/MQTransationMessageAnno.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/software/maven3.6/repository/org/springframework/spring-aop/5.0.10.RELEASE/spring-aop-5.0.10.RELEASE.jar!/org/springframework/aop/interceptor/ExposeInvocationInterceptor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/software/maven3.6/repository/org/springframework/spring-aop/5.0.10.RELEASE/spring-aop-5.0.10.RELEASE.jar!/org/springframework/aop/aspectj/AbstractAspectJAdvice.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7068">
+          <caret line="429" selection-start-line="429" selection-end-line="429" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mq-transation/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/software/maven3.6/repository/org/springframework/spring-aop/5.0.10.RELEASE/spring-aop-5.0.10.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8816">
+          <caret line="512" selection-start-line="512" selection-end-line="512" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/constant/MQConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="26" column="58" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/listener/AbstractRabbitMQMessageListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="43" column="7" lean-forward="true" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="99" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/config/CompleteCorrelationData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="60" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/config/RabbitTemplateConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="47" column="34" lean-forward="true" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/MqTransationApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/software/maven3.6/repository/org/springframework/data/spring-data-redis/2.0.11.RELEASE/spring-data-redis-2.0.11.RELEASE.jar!/org/springframework/data/redis/core/RedisTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="735" column="46" selection-start-line="735" selection-start-column="46" selection-end-line="735" selection-end-column="46" />
+          <folding>
+            <element signature="e#26986#26987#0" expanded="true" />
+            <element signature="e#27040#27041#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/software/maven3.6/repository/org/springframework/data/spring-data-redis/2.0.11.RELEASE/spring-data-redis-2.0.11.RELEASE.jar!/org/springframework/data/redis/core/HashOperations.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="24" column="47" lean-forward="true" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/config/XxlQueueConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="66" column="25" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/config/BizQueueConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="53" column="6" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/artificial/package-info.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/consumer/XxlMQTransationMessageListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/consumer/BizMQTransationMessageListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/pojo/RabbitMetaMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mq-transation/src/test/java/com/schcilin/mqtransation/MqTransationApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding>
+            <element signature="e#474#475#0" expanded="true" />
+            <element signature="e#501#502#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/coordinator/impl/RedisDBCoordinatorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="120" column="67" lean-forward="true" selection-start-line="120" selection-start-column="67" selection-end-line="120" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1168#1169#0" expanded="true" />
+            <element signature="e#1250#1251#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/coordinator/DBCoordinator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        <state relative-caret-position="473">
+          <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/coordinator/impl/RedisDBCoordinatorImpl.java">
+    <entry file="file://$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/sender/MQTransationSender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="62" column="74" lean-forward="true" selection-start-line="62" selection-start-column="74" selection-end-line="62" selection-end-column="74" />
-          <folding>
-            <element signature="e#1686#1687#0" expanded="true" />
-            <element signature="e#1767#1768#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/software/maven3.6/repository/org/springframework/amqp/spring-rabbit/2.1.6.RELEASE/spring-rabbit-2.1.6.RELEASE-sources.jar!/org/springframework/amqp/rabbit/core/RabbitTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="2717" column="29" lean-forward="true" selection-start-line="2717" selection-start-column="29" selection-end-line="2718" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/software/maven3.6/repository/org/springframework/amqp/spring-rabbit/2.1.6.RELEASE/spring-rabbit-2.1.6.RELEASE-sources.jar!/org/springframework/amqp/rabbit/connection/CorrelationData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="60" column="18" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
-          <folding>
-            <element signature="e#1862#1863#0" expanded="true" />
-            <element signature="e#1883#1884#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/config/RabbitTemplateConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="50" column="85" lean-forward="true" selection-start-line="50" selection-start-column="85" selection-end-line="50" selection-end-column="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2705#2706#0" expanded="true" />
-            <element signature="e#2762#2763#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/software/maven3.6/repository/org/springframework/amqp/spring-rabbit/2.1.6.RELEASE/spring-rabbit-2.1.6.RELEASE-sources.jar!/org/springframework/amqp/rabbit/listener/api/ChannelAwareMessageListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/listener/AbstractRabbitMQMessageListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
+        <state relative-caret-position="-12">
+          <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/constant/MQConstant.java">
+    <entry file="file://$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/aop/MQTransationAopSender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        <state relative-caret-position="263">
+          <caret line="97" column="10" selection-start-line="97" selection-start-column="10" selection-end-line="98" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/provider/MQTransationMessageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="133" selection-start-line="16" selection-start-column="133" selection-end-line="16" selection-end-column="133" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/sender/MQTransation4Bug2ReSend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mq-transation/src/main/java/com/schcilin/mqtransation/artificial/MQTransation4Bug2ReSendController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="56" column="31" lean-forward="true" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

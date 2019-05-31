@@ -22,4 +22,21 @@ public class MQConstant {
     public static final Object MQ_MSG_READY = "mq.msg.ready";
     /**消费者重试统计key*/
     public static final String MQ_CONSUMER_RETRY_COUNT_KEY = "mq.consumer.retry.count.key";
+
+    /**生产者重试统计key*/
+    public static final String MQ_PROVIDER_RETRY_COUNT_KEY = "mq.provider.retry.count.key";
+
+    /** 消费端最大重试次数 */
+    public static final long MAX_CONSUMER_COUNT = 5;
+
+    /** 递增时的基本常量 */
+    public static final double BASE_NUM = 2;
+
+    /**任务逻辑交换机*/
+    public static final String BIZ_EXCHANGE = "biz.exchange";
+    /**任务队列*/
+    public static final String BIZ_QUEUE= "biz.queue";
+    /**任务路由*/
+    public static final String BIZ_ROUTINGKEY= "biz.routingKey";
+    public static final String RedisDBCoordinator= "RedisDBCoordinator";
 }
