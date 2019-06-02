@@ -7,7 +7,7 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 import org.springframework.scheduling.annotation.EnableAsync;
 
 /**
- *
+ zuul网关代理,可用作限流
  */
 @SpringCloudApplication
 @EnableZuulProxy

@@ -5,7 +5,7 @@ server:
 #\u5E94\u7528\u540D\u79F0
 spring:
   application:
-    name: zuulGatway
+    name: zuulGateway
 
 
 zuul:
@@ -20,7 +20,9 @@ zuul:
 
     uaa:
       path: /uaa/*
-      serviceId: auth2
+      serviceId:
+        #开启retry重试功能
+  retryable: true
 
 
 
