@@ -1,13 +1,10 @@
 package com.schcilin.mqtransation.config;
 
-import com.schcilin.mqtransation.constant.MQConstant;
-import com.schcilin.mqtransation.consumer.BizMQTransationMessageListener;
 import com.schcilin.mqtransation.consumer.XxlMQTransationMessageListener;
 import org.springframework.amqp.core.*;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
 import org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -20,7 +17,7 @@ import java.util.Map;
  * 建议每个队列定义自己的QueueConfig
  */
 
-@Configuration
+//@Configuration
 public class XxlQueueConfig {
     /**
      * 业务交换机

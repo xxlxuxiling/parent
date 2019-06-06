@@ -1,9 +1,9 @@
 # 开发环境配置
 spring:
   datasource:
-    jdbc-url:  jdbc:mysql://localhost:3306/demo?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    jdbc-url:  jdbc:mysql://localhost:3306/goods?useUnicode=true&characterEncoding=UTF-8&useSSL=false
     username: root
-    password: '/CT77CqYkn/dwvzxjzGdBg=='
+    password: admin
     driver-class-name: com.mysql.jdbc.Driver
     # Hikari will use the above plus the following to setup connection pooling
     type: com.zaxxer.hikari.HikariDataSource
@@ -22,3 +22,24 @@ spring:
     user:
       name: admin
       password: admin
+
+
+
+    #mq配置H
+  rabbitmq:
+      host: 192.168.1.78
+      port: 5672
+      username: admin
+      password: admin
+      #\u5730\u5740\u865A\u62DF\u7A7A\u95F4
+      virtual-host: /
+      #\u5F00\u542F\u6D88\u606F\u786E\u8BA4\u673A\u5236 confirms
+      publisher-confirms: true
+      publisher-returns: true
+
+
+
+    #redis配置
+  redis:
+      host: 127.0.0.1
+      port: 6379

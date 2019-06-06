@@ -27,8 +27,6 @@ import java.util.UUID;
 @Component
 @Slf4j
 public class MQTransationSender {
-    @Autowired
-    private RedisTemplate redisTemplate;
 
     @Autowired
     private RabbitTemplate rabbitTemplate;
@@ -60,11 +58,11 @@ public class MQTransationSender {
             }
         };
         ObjectMapper mapper = new ObjectMapper();
-        String value = mapper.writeValueAsString(rabbitMetaMessage.getPayload());
+        String value = mapper.writeValueAsString(rabbitMetaMessage);
         MessageProperties messageProperties = new MessageProperties();
         /**默认"application/octet-stream"*/
         messageProperties.setContentType("application/json");
-        //消息体
+        //消息体，主要是为了消费者消费失败的时候，重新发送消息
         Message message = new Message(value.getBytes(), messageProperties);
         try {
             this.rabbitTemplate.convertAndSend(rabbitMetaMessage.getExchange(), rabbitMetaMessage.getRoutingKey(), message, messagePostProcessor, new CorrelationData(msgId));

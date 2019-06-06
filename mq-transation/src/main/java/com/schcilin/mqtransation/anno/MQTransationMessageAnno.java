@@ -7,7 +7,6 @@ import java.lang.annotation.*;
  * @Date: 2019/5/23 14:35
  * @Content: 使用注解用来无侵入的实现分布式事务
  */
-@Inherited
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.METHOD})
 @Documented

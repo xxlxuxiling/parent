@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8" addBOMForNewFiles="with NO BOM">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/basicInfo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/common_server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/configServer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/goods" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mq-transation" charset="UTF-8" />
@@ -12,5 +13,6 @@
     <file url="file://$PROJECT_DIR$/sysuser" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tcc-transactions" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zuul" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

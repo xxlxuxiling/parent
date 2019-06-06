@@ -1,18 +1,21 @@
 package com.schcilin.goods;
 
+import com.schcilin.mqtransation.anno.MQTransationMessageAnno;
 import com.ulisesbocchio.jasyptspringboot.annotation.EnableEncryptableProperties;
-import org.springframework.beans.factory.annotation.Value;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.cloud.client.SpringCloudApplication;
-import org.springframework.context.annotation.Bean;
+import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
 @EnableEncryptableProperties//开启数据库加密配置，不开启访问时需要密码错误
 @SpringCloudApplication
+@EnableFeignClients
 @EnableTransactionManagement//开启事务
-@RestController
+@EnableAspectJAutoProxy(proxyTargetClass = true)//开启切面代理
+@ComponentScan(basePackages = "com.schcilin")//在com.schcilin这里面的包进行扫描
 public class GoodsApplication {
 
    // @Value("${app.name.name}")
@@ -21,10 +24,7 @@ public class GoodsApplication {
     public static void main(String[] args) {
         SpringApplication.run(GoodsApplication.class, args);
     }
-    @GetMapping("/test")
-    public String test() {
-        return "cehsi";
-    }
+
    // @Bean
     public static PropertySourcesPlaceholderConfigurer placeholderConfigurer() {
         PropertySourcesPlaceholderConfigurer c = new PropertySourcesPlaceholderConfigurer();

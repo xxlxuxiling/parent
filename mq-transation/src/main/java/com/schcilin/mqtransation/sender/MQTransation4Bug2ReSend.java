@@ -1,6 +1,5 @@
 package com.schcilin.mqtransation.sender;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.schcilin.mqtransation.constant.MQConstant;
 import com.schcilin.mqtransation.coordinator.DBCoordinator;
 import com.schcilin.mqtransation.pojo.RabbitMetaMessage;

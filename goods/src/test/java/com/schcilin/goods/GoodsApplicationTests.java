@@ -1,8 +1,7 @@
 package com.schcilin.goods;
 
-import com.schcilin.goods.entity.ZbglIncident;
-import com.schcilin.goods.mapper.ZbglIncidentMapper;
-import com.schcilin.goods.service.ZbglIncidentService;
+import com.schcilin.goods.entity.TGoods;
+import com.schcilin.goods.service.TGoodsService;
 import org.jasypt.encryption.StringEncryptor;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -13,17 +12,20 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class GoodsApplicationTests {
-    @Autowired
-    private ZbglIncidentMapper zbglIncidentMapper;
+
     @Autowired
     private StringEncryptor stringEncryptor;
+
+    @Autowired
+    private TGoodsService tGoodsService;
 
 
     @Test
     public void testDemo() {
-        // ZbglIncident byId = zbglIncidentService.getById("0252993f02114f70952176aa6b3e21ff");
-        ZbglIncident zbglIncident = zbglIncidentMapper.selectById("0252993f02114f70952176aa6b3e21ff");
-        System.out.println(zbglIncident);
+        TGoods tGoods = new TGoods();
+        tGoods.setId(String.valueOf(Math.random()));
+        tGoods.setGoodName("ssss");
+        tGoodsService.insertModel(tGoods);
 
     }
 

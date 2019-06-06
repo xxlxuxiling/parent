@@ -1,7 +1,7 @@
-package com.schcilin.mqtransation.config;
+package com.schcilin.goods.config;
 
+import com.schcilin.goods.consumer.BizMQTransationMessageListener;
 import com.schcilin.mqtransation.constant.MQConstant;
-import com.schcilin.mqtransation.consumer.BizMQTransationMessageListener;
 import org.springframework.amqp.core.*;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
 import org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer;
@@ -16,20 +16,21 @@ import org.springframework.context.annotation.Configuration;
  * 建议每个队列定义自己的QueueConfig
  */
 
-//@Configuration
+@Configuration
 public class BizQueueConfig {
+
     /**
      * 业务交换机
      */
-    //@Bean
+    @Bean
     public DirectExchange bizQueueExchange() {
-        return new DirectExchange(MQConstant.BIZ_EXCHANGE);
+        return new DirectExchange(MQConstant.BIZ_EXCHANGE,true,false);
     }
 
     /**
      * 声明业务队列String name, boolean durable, boolean exclusive, boolean autoDelete
      */
-    //@Bean
+    @Bean
     public Queue bizQueue() {
         return new Queue(MQConstant.BIZ_QUEUE, true, false, false);
     }
@@ -39,7 +40,7 @@ public class BizQueueConfig {
      *
      * @return
      */
-   // @Bean
+    @Bean
     public Binding bizBinding() {
         return BindingBuilder.bind(bizQueue()).to(bizQueueExchange()).with(MQConstant.BIZ_ROUTINGKEY);
     }
@@ -51,7 +52,7 @@ public class BizQueueConfig {
      * @param listener          队列监听器
      * @return 监听容器对象
      */
-    //@Bean(name = "bizMessageListenerContainer")
+    @Bean
     public SimpleMessageListenerContainer bizMessageListenerContainer(ConnectionFactory connectionFactory, BizMQTransationMessageListener listener) {
         SimpleMessageListenerContainer simpleMessageListenerContainer = new SimpleMessageListenerContainer(connectionFactory);
         simpleMessageListenerContainer.setQueues(bizQueue());

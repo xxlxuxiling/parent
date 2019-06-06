@@ -83,8 +83,6 @@ public class RedisDBCoordinatorImpl implements DBCoordinator {
                 messageIds.add(message.getMessageId());
             }
         }
-        /**在redis中删除已超时的消息*/
-        hashOperations.delete(MQConstant.MQ_MSG_READY, messageIds);
         return messageAlert;
     }
 
@@ -100,8 +98,6 @@ public class RedisDBCoordinatorImpl implements DBCoordinator {
                 messageAlert.add(messageId);
             }
         }
-        /**在redis中删除已超时的消息*/
-        setOperations.remove(MQConstant.MQ_MSG_READY,messageAlert);
         return messageAlert;
     }
 

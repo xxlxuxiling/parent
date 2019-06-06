@@ -1,7 +1,9 @@
 package com.schcilin.mqtransation.listener;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.rabbitmq.client.Channel;
 import com.schcilin.mqtransation.constant.MQConstant;
+import com.schcilin.mqtransation.pojo.RabbitMetaMessage;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.core.Message;
 import org.springframework.amqp.core.MessageProperties;
@@ -43,14 +45,22 @@ public abstract class AbstractRabbitMQMessageListener implements ChannelAwareMes
             Long delete = redisTemplate.opsForHash().delete(MQConstant.MQ_CONSUMER_RETRY_COUNT_KEY, messageProperties.getMessageId());
             log.info("消费者成功消费消息ID->{}，同时删除redis中的统计{}次", messageProperties.getMessageId(), delete);
             //此时需要将redisready状态设置为一定时间内过期
-            redisTemplate.opsForHash().delete(MQConstant.MQ_MSG_READY,messageProperties.getMessageId());
+            redisTemplate.opsForHash().delete(MQConstant.MQ_MSG_READY, messageProperties.getMessageId());
         } catch (Exception e) {
+            e.printStackTrace();
             //消费者消费消息失败
             log.error("消费者消费RabbitMQ失败，消息ID{}", messageProperties.getMessageId(), e);
-            //超过最大次数，进入私信队列
+            //超过最大次数，进入死信队列
             if (countConsumercount >= MQConstant.MAX_CONSUMER_COUNT) {
-                //如果应该重新请求被拒绝的消息，而不是丢弃/死字，则requeue为true
+                //表示如何处理这条消息，如果值为true，则重新放入RabbitMQ的发送队列，如果值为false，则通知RabbitMQ销毁这条消息
                 channel.basicReject(deliveryTag, false);
+                //channel.basicRecover(true);
+                //消费者消费消息失败,消息体为RabbitMetaMessage
+                ObjectMapper mapper=new ObjectMapper();
+                String messaged=new String(message.getBody());
+                RabbitMetaMessage rabbitMetaMessage=mapper.readValue(messaged.getBytes("utf-8"), RabbitMetaMessage.class);
+                this.redisTemplate.opsForHash().put(MQConstant.MQ_MSG_READY, messageProperties.getMessageId(), rabbitMetaMessage);
+
 
             }
             //重新发送消息，但是程序要延迟发送，为了等微服务可用，减少人工干预

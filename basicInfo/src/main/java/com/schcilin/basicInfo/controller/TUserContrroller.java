@@ -1,9 +1,11 @@
 package com.schcilin.basicInfo.controller;
 
 
-import org.springframework.web.bind.annotation.RequestMapping;
-
-import org.springframework.stereotype.Controller;
+import com.schcilin.basicInfo.entity.TUser;
+import com.schcilin.basicInfo.service.TUserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * <p>
@@ -13,9 +15,17 @@ import org.springframework.stereotype.Controller;
  * @author schcilin
  * @since 2019-01-02
  */
-@Controller
-@RequestMapping("/tUser")
+@RestController("/baseUser")
 public class TUserContrroller {
+    @Autowired
+    private TUserService tUserService;
+    @GetMapping(value = "/add")
+    public void  addUser() throws Exception{
+        TUser tUser = new TUser();
+        tUser.setId(String.valueOf(Math.random()));
+        tUser.setUserName("你猜猜");
+        tUserService.save(tUser);
+    }
 
 }
 
