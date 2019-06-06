@@ -54,19 +54,22 @@ public abstract class AbstractRabbitMQMessageListener implements ChannelAwareMes
             if (countConsumercount >= MQConstant.MAX_CONSUMER_COUNT) {
                 //表示如何处理这条消息，如果值为true，则重新放入RabbitMQ的发送队列，如果值为false，则通知RabbitMQ销毁这条消息
                 channel.basicReject(deliveryTag, false);
+                //是否消息恢复
                 //channel.basicRecover(true);
-                //消费者消费消息失败,消息体为RabbitMetaMessage
-                ObjectMapper mapper=new ObjectMapper();
-                String messaged=new String(message.getBody());
-                RabbitMetaMessage rabbitMetaMessage=mapper.readValue(messaged.getBytes("utf-8"), RabbitMetaMessage.class);
+                //消费者消费消息失败,消息体为RabbitMetaMessage,同时设置消息源
+                ObjectMapper mapper = new ObjectMapper();
+                String messaged = new String(message.getBody());
+                RabbitMetaMessage rabbitMetaMessage = mapper.readValue(messaged.getBytes("utf-8"), RabbitMetaMessage.class);
+                rabbitMetaMessage.setOrigin("consumer");
                 this.redisTemplate.opsForHash().put(MQConstant.MQ_MSG_READY, messageProperties.getMessageId(), rabbitMetaMessage);
-
+                Long delete = redisTemplate.opsForHash().delete(MQConstant.MQ_CONSUMER_RETRY_COUNT_KEY, messageProperties.getMessageId());
+                log.error("消费者消费消息ID->{}失败，同时删除redis中的统计{}次", messageProperties.getMessageId(), delete);
 
             }
-            //重新发送消息，但是程序要延迟发送，为了等微服务可用，减少人工干预
             else {
                 log.error("rabbitMQ消费消息异常，消息ID：{}， exchangeName:{}, routingKey:{}",
                         messageProperties.getMessageId(), messageProperties.getReceivedExchange(), messageProperties.getReceivedRoutingKey(), e);
+                //重新发送消息，但是程序要延迟发送，为了等微服务可用，减少人工干预
                 Thread.sleep((long) Math.pow(MQConstant.BASE_NUM, countConsumercount) * 1000);
                 //同时发送次数+1
                 redisTemplate.opsForHash().increment(MQConstant.MQ_CONSUMER_RETRY_COUNT_KEY, messageProperties.getMessageId(), 1);

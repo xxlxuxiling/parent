@@ -34,6 +34,5 @@ public class TGoodsServiceImpl   extends ServiceImpl<TGoodsMapper, TGoods> imple
     @Override
     public void add(TGoods tGoods) throws Exception {
         this.baseMapper.insert(tGoods);
-        int i=1/0;
     }
 }

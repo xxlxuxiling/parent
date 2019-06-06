@@ -27,7 +27,7 @@ public class MQConstant {
     public static final String MQ_PROVIDER_RETRY_COUNT_KEY = "mq.provider.retry.count.key";
 
     /** 消费端最大重试次数 */
-    public static final long MAX_CONSUMER_COUNT = 5;
+    public static final long MAX_CONSUMER_COUNT = 3;
 
     /** 递增时的基本常量 */
     public static final double BASE_NUM = 2;

@@ -9,6 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.concurrent.CountDownLatch;
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class GoodsApplicationTests {
@@ -22,10 +24,23 @@ public class GoodsApplicationTests {
 
     @Test
     public void testDemo() {
-        TGoods tGoods = new TGoods();
-        tGoods.setId(String.valueOf(Math.random()));
-        tGoods.setGoodName("ssss");
-        tGoodsService.insertModel(tGoods);
+        int consumer = 2000;
+        final CountDownLatch downLatch = new CountDownLatch(consumer);
+        for (int i = 0; i <consumer ; i++) {
+           new Thread(()->{
+               TGoods tGoods = new TGoods();
+               tGoods.setId(String.valueOf(Math.random()));
+               tGoods.setGoodName("ssss");
+               tGoodsService.insertModel(tGoods);
+               downLatch.countDown();
+           }).start();
+        }
+        try {
+            downLatch.await();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
 
     }
 

@@ -21,6 +21,6 @@ public class RabbitMetaMessage implements Serializable {
     String exchange;
     /**路由*/
     String routingKey;
-    /***/
-    Object payload;
+    /**数据源，默认是provider*/
+    String origin;
 }

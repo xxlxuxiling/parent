@@ -82,8 +82,8 @@ public class MQTransationAopSender {
         rabbitMetaMessage.setExchange(exchange);
         /**指定routing key */
         rabbitMetaMessage.setRoutingKey(bindingKey);
-        /** 设置需要传递的消息体,可以是任意对象 */
-        rabbitMetaMessage.setPayload(returnObj);
+        /** 设置消息来源 */
+        rabbitMetaMessage.setOrigin("provider");
         /** 将消息设置为ready状态，此时必须保证redis服务器可用*/
         dbCoordinator.setMsgReady(bizName, rabbitMetaMessage);
 
