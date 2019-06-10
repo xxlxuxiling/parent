@@ -6,6 +6,7 @@ import com.schcilin.goods.mapper.TGoodsMapper;
 import com.schcilin.goods.service.TGoodsService;
 import com.schcilin.mqtransation.anno.MQTransationMessageAnno;
 import com.schcilin.mqtransation.constant.MQConstant;
+import org.springframework.cache.annotation.CachePut;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -20,10 +21,10 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 public class TGoodsServiceImpl   extends ServiceImpl<TGoodsMapper, TGoods> implements  TGoodsService {
 
-    @MQTransationMessageAnno(exchange = MQConstant.BIZ_EXCHANGE, bizName = MQConstant.BIZ_QUEUE, bindingKey = MQConstant.BIZ_ROUTINGKEY, dbCoordinator = MQConstant.RedisDBCoordinator)
+    @MQTransationMessageAnno(exchange = MQConstant.BIZ_EXCHANGE+",xxl.exchange", bizName ="#tGoods.getId()",bindingQueue =MQConstant.BIZ_QUEUE+",xxl.queue" , bindingKey = MQConstant.BIZ_ROUTINGKEY+",xxl.route", dbCoordinator = MQConstant.RedisDBCoordinator)
     @Transactional(rollbackFor = Exception.class)
     @Override
-    public void insertModel(TGoods tGoods) {
+    public void insertModel(TGoods tGoods,String test) {
         this.baseMapper.insert(tGoods);
 
 

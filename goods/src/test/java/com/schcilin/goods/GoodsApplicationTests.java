@@ -24,14 +24,14 @@ public class GoodsApplicationTests {
 
     @Test
     public void testDemo() {
-        int consumer = 2000;
+        int consumer = 1;
         final CountDownLatch downLatch = new CountDownLatch(consumer);
         for (int i = 0; i <consumer ; i++) {
            new Thread(()->{
                TGoods tGoods = new TGoods();
                tGoods.setId(String.valueOf(Math.random()));
                tGoods.setGoodName("ssss");
-               tGoodsService.insertModel(tGoods);
+               tGoodsService.insertModel(tGoods,"1");
                downLatch.countDown();
            }).start();
         }

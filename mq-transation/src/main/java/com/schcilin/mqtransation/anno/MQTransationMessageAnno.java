@@ -20,9 +20,13 @@ public @interface MQTransationMessageAnno {
      * 要发送的key
      */
     String bindingKey() default "";
+    /**
+     * 要发送的key
+     */
+    String bindingQueue() default "";
 
     /**
-     * 业务编号
+     * 业务名称
      */
     String bizName() default "";
 

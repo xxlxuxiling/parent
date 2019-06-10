@@ -12,12 +12,13 @@ import org.springframework.stereotype.Component;
  */
 
 @Slf4j
-//@Component
+@Component
 public class XxlMQTransationMessageListener extends AbstractRabbitMQMessageListener {
 
     @Override
     public void receiveMsg(Message message) throws Exception {
 
-        System.out.println("成功消费消息xxl");
+        log.info(message.getBody() + "并行分布式事务");
+        int i = 1 / 0;
     }
 }

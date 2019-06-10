@@ -31,7 +31,7 @@ public class TGoodsContrroller {
         TGoods tGoods = new TGoods();
         tGoods.setId(String.valueOf(Math.random()));
         tGoods.setGoodName("ssss");
-        tGoodsService.insertModel(tGoods);
+        tGoodsService.insertModel(tGoods,"1");
     }
     @PostMapping("/sss")
     public void sss(){

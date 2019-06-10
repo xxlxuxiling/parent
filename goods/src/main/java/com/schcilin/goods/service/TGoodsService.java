@@ -14,7 +14,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
 public interface TGoodsService extends IService<TGoods> {
 
 
-    void insertModel(TGoods tGoods);
+    void insertModel(TGoods tGoods,String test);
 
     void add(TGoods tGoods) throws Exception;
 }

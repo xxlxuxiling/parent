@@ -33,13 +33,13 @@ public class RedisDBCoordinatorImpl implements DBCoordinator {
 
     @Override
     public void setMsgPrepare(String msgId) {
-        redisTemplate.opsForSet().add(MQConstant.MQ_MSG_PREPARE, msgId);
+        redisTemplate.opsForHash().put(MQConstant.MQ_MSG_PREPARE, msgId,msgId);
 
     }
 
     @Override
     public void deleteMsgPrepare(String msgId) {
-        redisTemplate.opsForSet().remove(MQConstant.MQ_MSG_PREPARE, msgId);
+        redisTemplate.opsForHash().delete(MQConstant.MQ_MSG_PREPARE, msgId);
     }
 
     /**
@@ -51,7 +51,7 @@ public class RedisDBCoordinatorImpl implements DBCoordinator {
     @Override
     public void setMsgReady(String msgId, RabbitMetaMessage rabbitMetaMessage) {
         redisTemplate.opsForHash().put(MQConstant.MQ_MSG_READY, msgId, rabbitMetaMessage);
-        redisTemplate.opsForSet().remove(MQConstant.MQ_MSG_PREPARE, msgId);
+        redisTemplate.opsForHash().delete(MQConstant.MQ_MSG_PREPARE, msgId);
 
     }
 
