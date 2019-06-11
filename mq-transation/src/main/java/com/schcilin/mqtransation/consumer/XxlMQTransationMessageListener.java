@@ -19,6 +19,5 @@ public class XxlMQTransationMessageListener extends AbstractRabbitMQMessageListe
     public void receiveMsg(Message message) throws Exception {
 
         log.info(message.getBody() + "并行分布式事务");
-        int i = 1 / 0;
     }
 }

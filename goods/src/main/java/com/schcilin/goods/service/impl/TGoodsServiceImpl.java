@@ -6,7 +6,6 @@ import com.schcilin.goods.mapper.TGoodsMapper;
 import com.schcilin.goods.service.TGoodsService;
 import com.schcilin.mqtransation.anno.MQTransationMessageAnno;
 import com.schcilin.mqtransation.constant.MQConstant;
-import org.springframework.cache.annotation.CachePut;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

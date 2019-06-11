@@ -12,16 +12,16 @@ import java.lang.annotation.*;
 @Documented
 public @interface MQTransationMessageAnno {
     /**
-     * 要发送的交换机
+     * 要发送的交换机，多个以,隔开
      */
     String exchange() default "";
 
     /**
-     * 要发送的key
+     * 要发送的路由key，多个以,隔开
      */
     String bindingKey() default "";
     /**
-     * 要发送的key
+     * 要绑定队列，多个以,隔开
      */
     String bindingQueue() default "";
 

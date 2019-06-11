@@ -30,7 +30,7 @@ public class GoodsApplicationTests {
            new Thread(()->{
                TGoods tGoods = new TGoods();
                tGoods.setId(String.valueOf(Math.random()));
-               tGoods.setGoodName("ssss");
+               tGoods.setGoodName("哈哈哈");
                tGoodsService.insertModel(tGoods,"1");
                downLatch.countDown();
            }).start();

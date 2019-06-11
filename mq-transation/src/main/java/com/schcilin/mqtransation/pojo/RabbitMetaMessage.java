@@ -15,12 +15,24 @@ import java.io.Serializable;
 @Getter
 public class RabbitMetaMessage implements Serializable {
     private static final long serialVersionUID = -1097321000102904701L;
-    /** 业务ID*/
-    String messageId;
-    /**交换机*/
-    String exchange;
-    /**路由*/
-    String routingKey;
-    /**数据源，默认是provider*/
-    String origin;
+    /**
+     * 业务ID
+     */
+    private String messageId;
+    /**
+     * 交换机
+     */
+    private String exchange;
+    /**
+     * 路由
+     */
+    private String routingKey;
+    /**
+     * 数据源，默认是provider
+     */
+    private String origin;
+    /**
+     * 业务信息载体
+     */
+    private String bizMsg;
 }

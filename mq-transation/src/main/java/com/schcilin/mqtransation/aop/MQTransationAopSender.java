@@ -1,5 +1,6 @@
 package com.schcilin.mqtransation.aop;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.collect.Lists;
 import com.schcilin.mqtransation.anno.MQTransationMessageAnno;
 import com.schcilin.mqtransation.constant.MQConstant;
@@ -97,6 +98,9 @@ public class MQTransationAopSender {
             return;
         }
         /**发送前暂存消息*/
+        //为了保存业务信息，把参数保留在msg里面
+        ObjectMapper mapper = new ObjectMapper();
+        String bizValue = mapper.writeValueAsString(args[0]);
         int changeLen = exchange.length;
         List<RabbitMetaMessage> batchMsg = Lists.newArrayList();
         for (int j = 0; j < changeLen; j++) {
@@ -109,6 +113,8 @@ public class MQTransationAopSender {
             rabbitMetaMessage.setRoutingKey(bindingKey[j]);
             /** 设置消息来源 */
             rabbitMetaMessage.setOrigin("provider");
+            /**保留业务信息*/
+            rabbitMetaMessage.setBizMsg(bizValue);
             /** 将消息设置为prepare状态，此时非必须保证redis服务器可用*/
             dbCoordinator.setMsgPrepare(rabbitMetaMessage.getMessageId());
             batchMsg.add(rabbitMetaMessage);
