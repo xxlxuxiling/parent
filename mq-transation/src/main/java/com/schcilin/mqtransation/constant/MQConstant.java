@@ -1,4 +1,5 @@
-package com.schcilin.mqtransation.constant;/**
+package com.schcilin.mqtransation.constant;
+/**
  * @Author: schcilin
  * @Date: 2019/5/23 16:04
  * @Content:

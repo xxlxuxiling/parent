@@ -3,6 +3,7 @@ package com.schcilin.goods;
 import com.schcilin.goods.entity.TGoods;
 import com.schcilin.goods.service.TGoodsService;
 import org.jasypt.encryption.StringEncryptor;
+import org.jasypt.util.text.BasicTextEncryptor;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -46,8 +47,11 @@ public class GoodsApplicationTests {
 
     @Test
     public void dataSourceEncryptor() {
-        String root = stringEncryptor.encrypt("root");
+       String root = stringEncryptor.encrypt("root");
+       String admin = stringEncryptor.encrypt("admin");
         System.out.println(root);
+        System.out.println(admin);
+
     }
 }
 

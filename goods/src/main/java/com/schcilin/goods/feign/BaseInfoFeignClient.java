@@ -1,7 +1,10 @@
 package com.schcilin.goods.feign;
 
+import com.schcilin.goods.entity.TGoods;
 import com.schcilin.goods.feign.impl.BaseInfoFeignClientImpl;
+import feign.RequestLine;
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.cloud.openfeign.SpringQueryMap;
 import org.springframework.web.bind.annotation.GetMapping;
 
 /**
@@ -11,6 +14,6 @@ import org.springframework.web.bind.annotation.GetMapping;
  */
 @FeignClient(qualifier = "baseInfoFeignClientImpl", name = "basicInfo", fallback = BaseInfoFeignClientImpl.class)
 public interface BaseInfoFeignClient {
-    @GetMapping("/baseUser/add")
-    void addUser();
+    @RequestLine("GET /baseUser/add")
+    void addUser(@SpringQueryMap TGoods tGoods);
 }

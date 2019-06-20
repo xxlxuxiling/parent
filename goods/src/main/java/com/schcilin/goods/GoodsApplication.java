@@ -1,8 +1,6 @@
 package com.schcilin.goods;
 
-import com.schcilin.mqtransation.anno.MQTransationMessageAnno;
 import com.ulisesbocchio.jasyptspringboot.annotation.EnableEncryptableProperties;
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.cloud.client.SpringCloudApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
