@@ -47,7 +47,6 @@
         <dependency>
             <groupId>org.springframework.amqp</groupId>
             <artifactId>spring-rabbit</artifactId>
-            <version>2.0.12.RELEASE</version>
         </dependency>
         <!--mq support end-->
 

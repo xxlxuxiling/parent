@@ -7,7 +7,6 @@ import com.netflix.zuul.context.RequestContext;
 import com.netflix.zuul.exception.ZuulException;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 
@@ -50,7 +49,6 @@ public class RateLimitZuulFilter extends ZuulFilter {
     public String filterType() {
         return "pre";
     }
-
     /**
      * 参考该类PreDecorationFilter
      *
@@ -94,9 +92,40 @@ public class RateLimitZuulFilter extends ZuulFilter {
         //如果不是RibbonRoutingFilter路由,默认是URL格式
         else {
             //对于URl格式的,走的是simpleHostRoutingFilter
+        try {
+            RequestContext ctx = RequestContext.getCurrentContext();
+            HttpServletResponse response = ctx.getResponse();
+            String mapKey = null;
+            //对于service格式的路由，走RibbonRoutingFilter路由微服务的serviceId
+            String serviceID = (String) ctx.get("your serviceID");
+            if (StringUtils.isNotBlank(serviceID)) {
+                mapKey = serviceID;
+                map.putIfAbsent(mapKey, RateLimiter.create(1000.0));
+            }
+            //如果不是RibbonRoutingFilter路由,默认是URL格式
+            else {
+                //对于URl格式的,走的是simpleHostRoutingFilter
+                URL routeHost = ctx.getRouteHost();
+                if (ObjectUtil.isNotNull(routeHost)) {
+                    mapKey = routeHost.toString();
+                    map.putIfAbsent(mapKey, RateLimiter.create(2000.0));
+                }
 
-
+            }
+            RateLimiter rateLimiter = map.get(mapKey);
+            //没有获取到令牌
+            if (!rateLimiter.tryAcquire()) {
+                HttpStatus tooManyRequests = HttpStatus.TOO_MANY_REQUESTS;
+                response.setContentType(MediaType.APPLICATION_JSON_UTF8_VALUE);
+                response.setStatus(tooManyRequests.value());
+                //不向微服务转发
+                ctx.setSendZuulResponse(false);
+                throw new ZuulException(tooManyRequests.getReasonPhrase(), tooManyRequests.value(), tooManyRequests.getReasonPhrase());
+            }
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
+
         return null;
     }
 }
