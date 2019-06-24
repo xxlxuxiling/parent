@@ -35,7 +35,7 @@ public class TGoodsContrroller {
     }
     @PostMapping("/sss")
     public void sss(){
-        baseInfoFeignClient.addUser();
+        baseInfoFeignClient.addUser(null);
     }
 
 }

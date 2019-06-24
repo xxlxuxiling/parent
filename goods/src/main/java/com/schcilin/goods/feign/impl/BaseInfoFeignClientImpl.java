@@ -1,5 +1,6 @@
 package com.schcilin.goods.feign.impl;
 
+import com.schcilin.goods.entity.TGoods;
 import com.schcilin.goods.feign.BaseInfoFeignClient;
 import org.springframework.stereotype.Component;
 
@@ -12,7 +13,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class BaseInfoFeignClientImpl implements BaseInfoFeignClient {
     @Override
-    public void addUser() {
+    public void addUser(TGoods tGoods) {
 
     }
 }

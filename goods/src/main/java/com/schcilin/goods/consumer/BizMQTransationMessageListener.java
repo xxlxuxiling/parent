@@ -11,8 +11,6 @@ import org.springframework.amqp.core.Message;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import javax.servlet.http.HttpServletRequest;
-
 /**
  * @Author: schcilin
  * @Date: 2019/5/28 17:58
@@ -27,8 +25,7 @@ public class BizMQTransationMessageListener extends AbstractRabbitMQMessageListe
     @Autowired
     private BaseInfoFeignClient baseInfoFeignClient;
 
-    @Autowired
-    HttpServletRequest servletRequest;
+
 
     @Override
     public void receiveMsg(Message message) throws Exception {
@@ -41,8 +38,7 @@ public class BizMQTransationMessageListener extends AbstractRabbitMQMessageListe
      /*       tGoods.setId(String.valueOf(Math.random()));
             tGoods.setGoodName("测试回调" + tGoods.getGoodName());
             tGoodsService.add(tGoods);*/
-            System.out.println(servletRequest.getRequestURL());
-            baseInfoFeignClient.addUser();
+            baseInfoFeignClient.addUser(tGoods);
         } catch (Exception e) {
             e.printStackTrace();
             throw e;

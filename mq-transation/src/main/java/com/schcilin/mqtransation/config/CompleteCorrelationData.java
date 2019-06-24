@@ -1,7 +1,7 @@
 package com.schcilin.mqtransation.config;
 
 
-import org.springframework.amqp.rabbit.support.CorrelationData;
+import org.springframework.amqp.rabbit.connection.CorrelationData;
 
 public class CompleteCorrelationData extends CorrelationData {
 

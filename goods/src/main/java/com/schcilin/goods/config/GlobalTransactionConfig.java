@@ -36,7 +36,7 @@ public class GlobalTransactionConfig {
      * 4.第二个*号:表示实现包
      * 5.*(..)*号表示所有方法名,..表示所有类型的参数
      */
-    private static final String POITCUT_EXPRESSION = "execution(*com.schcilin.goods.service.*.*(...))";
+    private static final String POITCUT_EXPRESSION = "execution(* com.schcilin.goods.service.*.*(..))";
     @Autowired
     private PlatformTransactionManager platformTransactionManager;
 
