@@ -26,4 +26,4 @@ CREATE TABLE `pay_channel` (
   `code` varchar(5) DEFAULT NULL COMMENT '渠道code',
   `simple_name` varchar(20) DEFAULT NULL COMMENT '英文简写',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

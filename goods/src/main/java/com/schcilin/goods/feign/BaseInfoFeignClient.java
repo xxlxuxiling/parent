@@ -5,7 +5,6 @@ import com.schcilin.goods.feign.impl.BaseInfoFeignClientImpl;
 import feign.RequestLine;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.cloud.openfeign.SpringQueryMap;
-import org.springframework.web.bind.annotation.GetMapping;
 
 /**
  * @Author: schcilin
@@ -14,6 +13,10 @@ import org.springframework.web.bind.annotation.GetMapping;
  */
 @FeignClient(qualifier = "baseInfoFeignClientImpl", name = "basicInfo", fallback = BaseInfoFeignClientImpl.class)
 public interface BaseInfoFeignClient {
+    /**
+     * springboot 2.1.x版本才支持
+     * @param tGoods
+     */
     @RequestLine("GET /baseUser/add")
     void addUser(@SpringQueryMap TGoods tGoods);
 }
