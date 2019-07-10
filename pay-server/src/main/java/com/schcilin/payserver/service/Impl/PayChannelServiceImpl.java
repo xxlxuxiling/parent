@@ -7,6 +7,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.reflections.Reflections;
 import org.springframework.stereotype.Service;
 
+import java.lang.reflect.Field;
 import java.util.Set;
 
 /**
@@ -20,12 +21,26 @@ import java.util.Set;
 @Service
 public class PayChannelServiceImpl extends ServiceImpl<PayChannelMapper, PayChannel> implements PayChannelService {
     @Override
-    public void test() {
+    public void test() throws ClassNotFoundException, IllegalAccessException, InstantiationException {
         Reflections reflections = new Reflections("com.schcilin.payserver.service.Impl");
         Set<Class<?>> annotatedWith = reflections.getTypesAnnotatedWith(Service.class);
         for(Class clzz:annotatedWith){
             String canonicalName = clzz.getCanonicalName();
-            System.out.println(canonicalName);
+            Class<?> aClass = Class.forName(canonicalName);
+            PayChannelServiceImpl o = (PayChannelServiceImpl) aClass.newInstance();
+            Field[] declaredFields = o.getClass().getDeclaredFields();
+            for (Field field : declaredFields) {
+                field.setAccessible(true);
+            }
+            Class<?> superclass = this.getClass().getSuperclass();
+            Field[] supFields = superclass.getDeclaredFields();
+            for (Field supField : supFields) {
+                supField.setAccessible(true);
+                supField.set(supField.getName(),supField.getType());
+            }
+
+
+            System.out.println(o.baseMapper);
         }
 
 

@@ -23,7 +23,7 @@ public class PayServerApplicationTests {
     }
 
     @Test
-    public void contextLoadsxx() {
+    public void contextLoadsxx() throws IllegalAccessException, InstantiationException, ClassNotFoundException {
        payChannelService.test();
     }
 
