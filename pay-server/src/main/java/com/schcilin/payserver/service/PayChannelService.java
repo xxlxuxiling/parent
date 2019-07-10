@@ -12,5 +12,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @since 2019-06-23
  */
 public interface PayChannelService extends IService<PayChannel> {
+   void test();
 
 }

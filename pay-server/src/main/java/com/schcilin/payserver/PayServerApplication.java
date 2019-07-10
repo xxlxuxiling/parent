@@ -1,6 +1,7 @@
 package com.schcilin.payserver;
 
 import com.ulisesbocchio.jasyptspringboot.annotation.EnableEncryptableProperties;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.cloud.client.SpringCloudApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
@@ -19,11 +20,12 @@ import org.springframework.web.context.WebApplicationContext;
 @ComponentScan(basePackages = "com.schcilin")//在com.schcilin这里面的包进行扫描
 public class PayServerApplication {
 
+
     public static void main(String[] args) {
-        SpringApplication.run(PayServerApplication.class, args);
         WebApplicationContext context = ContextLoader.getCurrentWebApplicationContext();
         Object impl = context.getBean("payChannelServiceImpl");
         System.out.println("获取spring 管理的bean==>"+impl);
+        SpringApplication.run(PayServerApplication.class, args);
     }
 
 }

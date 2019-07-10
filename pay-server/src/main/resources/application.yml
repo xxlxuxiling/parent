@@ -22,7 +22,7 @@ spring:
 mybatis-plus:
   mapper-locations: classpath:mapper/*Mapper.xml
   #\u5B9E\u4F53\u626B\u63CF\uFF0C\u591A\u4E2Apackage\u7528\u9017\u53F7\u6216\u8005\u5206\u53F7\u5206\u9694
-  typeAliasesPackage: com.schcilin.goods.entity
+  typeAliasesPackage: com.schcilin.payserver.entity
   #typeEnumsPackage: com.baomidou.springboot.entity.enums
   global-config:
     #\u5237\u65B0mapper \u8C03\u8BD5\u795E\u5668

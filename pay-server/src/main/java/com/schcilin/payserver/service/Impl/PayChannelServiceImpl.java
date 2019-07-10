@@ -4,7 +4,10 @@ import com.schcilin.payserver.entity.PayChannel;
 import com.schcilin.payserver.mapper.PayChannelMapper;
 import com.schcilin.payserver.service.PayChannelService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.reflections.Reflections;
 import org.springframework.stereotype.Service;
+
+import java.util.Set;
 
 /**
  * <p>
@@ -16,5 +19,17 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class PayChannelServiceImpl extends ServiceImpl<PayChannelMapper, PayChannel> implements PayChannelService {
+    @Override
+    public void test() {
+        Reflections reflections = new Reflections("com.schcilin.payserver.service.Impl");
+        Set<Class<?>> annotatedWith = reflections.getTypesAnnotatedWith(Service.class);
+        for(Class clzz:annotatedWith){
+            String canonicalName = clzz.getCanonicalName();
+            System.out.println(canonicalName);
+        }
 
+
+
+
+    }
 }

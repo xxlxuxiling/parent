@@ -1,16 +1,30 @@
 package com.schcilin.payserver;
 
+import com.schcilin.payserver.service.PayChannelService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.web.context.WebApplicationContext;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class PayServerApplicationTests {
+    @Autowired
+    WebApplicationContext webApplicationConnect;
 
+    @Autowired
+    private PayChannelService payChannelService;
     @Test
     public void contextLoads() {
+        Object impl = webApplicationConnect.getBean("payChannelServiceImpl");
+        System.out.println("获取spring 管理的bean==>"+impl);
+    }
+
+    @Test
+    public void contextLoadsxx() {
+       payChannelService.test();
     }
 
 }
