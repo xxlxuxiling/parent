@@ -1,7 +1,7 @@
 # 开发环境配置
 spring:
   datasource:
-    jdbc-url:  jdbc:mysql://localhost:3306/pay?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    url:  jdbc:mysql://localhost:3306/pay?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC
     username: ENC(G7ALfJeKPcEMl1SBJ51G2w==)
     password: ENC(+X2JfbrxEzdjhP5glc9srA==)
     driver-class-name: com.mysql.cj.jdbc.Driver

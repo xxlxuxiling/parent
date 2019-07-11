@@ -20,6 +20,7 @@ import java.util.Set;
  */
 @Service
 public class PayChannelServiceImpl extends ServiceImpl<PayChannelMapper, PayChannel> implements PayChannelService {
+    private int anInt;
     @Override
     public void test() throws ClassNotFoundException, IllegalAccessException, InstantiationException {
         Reflections reflections = new Reflections("com.schcilin.payserver.service.Impl");
@@ -28,19 +29,13 @@ public class PayChannelServiceImpl extends ServiceImpl<PayChannelMapper, PayChan
             String canonicalName = clzz.getCanonicalName();
             Class<?> aClass = Class.forName(canonicalName);
             PayChannelServiceImpl o = (PayChannelServiceImpl) aClass.newInstance();
-            Field[] declaredFields = o.getClass().getDeclaredFields();
-            for (Field field : declaredFields) {
+            Field[] fields = this.getClass().getFields();
+            for (Field field : fields) {
                 field.setAccessible(true);
-            }
-            Class<?> superclass = this.getClass().getSuperclass();
-            Field[] supFields = superclass.getDeclaredFields();
-            for (Field supField : supFields) {
-                supField.setAccessible(true);
-                supField.set(supField.getName(),supField.getType());
+                String simpleName = field.getType().getSimpleName();
             }
 
-
-            System.out.println(o.baseMapper);
+            System.out.println(o.anInt);
         }
 
 
