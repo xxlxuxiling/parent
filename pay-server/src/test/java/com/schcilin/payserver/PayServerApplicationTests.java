@@ -40,4 +40,9 @@ public class PayServerApplicationTests {
         System.out.println(bigDecimal);
     }
 
+    @Test
+    public void contextLoadExc() throws Exception {
+      payChannelService.testException();
+    }
+
 }

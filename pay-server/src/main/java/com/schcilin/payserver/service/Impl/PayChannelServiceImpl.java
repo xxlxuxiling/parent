@@ -12,7 +12,7 @@ import java.util.Set;
 
 /**
  * <p>
- *  服务实现类
+ * 服务实现类
  * </p>
  *
  * @author schcilin
@@ -21,11 +21,12 @@ import java.util.Set;
 @Service
 public class PayChannelServiceImpl extends ServiceImpl<PayChannelMapper, PayChannel> implements PayChannelService {
     private int anInt;
+
     @Override
     public void test() throws ClassNotFoundException, IllegalAccessException, InstantiationException {
         Reflections reflections = new Reflections("com.schcilin.payserver.service.Impl");
         Set<Class<?>> annotatedWith = reflections.getTypesAnnotatedWith(Service.class);
-        for(Class clzz:annotatedWith){
+        for (Class clzz : annotatedWith) {
             String canonicalName = clzz.getCanonicalName();
             Class<?> aClass = Class.forName(canonicalName);
             PayChannelServiceImpl o = (PayChannelServiceImpl) aClass.newInstance();
@@ -38,8 +39,15 @@ public class PayChannelServiceImpl extends ServiceImpl<PayChannelMapper, PayChan
             System.out.println(o.anInt);
         }
 
+    }
 
+    @Override
+    public void testException() {
+        try {
+            int q = 1 / 0;
 
+        } catch (Exception e) {
+        }
 
     }
 }

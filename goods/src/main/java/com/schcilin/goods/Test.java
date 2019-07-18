@@ -11,9 +11,9 @@ public class Test {
 
     public static void main(String[] args) {
         ClassLoader classLoader = Test.class.getClassLoader();
-        while (classLoader.getParent()!=null){
-            ClassLoader parent = classLoader.getParent();
-            System.out.println(parent);
+        while (classLoader != null) {
+            classLoader = classLoader.getParent();
+            System.out.println(classLoader);
         }
     }
-    }
+}

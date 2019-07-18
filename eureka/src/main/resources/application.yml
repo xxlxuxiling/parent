@@ -9,6 +9,10 @@ eureka:
   instance:
     hostname: localhost
 
+  server:
+    #关闭自我保护模式
+    enable-self-preservation: false
+
 
 
 spring:

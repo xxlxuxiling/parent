@@ -22,9 +22,6 @@ public class PayServerApplication {
 
 
     public static void main(String[] args) {
-        WebApplicationContext context = ContextLoader.getCurrentWebApplicationContext();
-        Object impl = context.getBean("payChannelServiceImpl");
-        System.out.println("获取spring 管理的bean==>"+impl);
         SpringApplication.run(PayServerApplication.class, args);
     }
 

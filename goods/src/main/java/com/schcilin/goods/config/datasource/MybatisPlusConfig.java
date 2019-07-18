@@ -1,4 +1,4 @@
-package com.schcilin.goods.config;
+package com.schcilin.goods.config.datasource;
 
 import com.baomidou.mybatisplus.core.injector.ISqlInjector;
 import com.baomidou.mybatisplus.extension.injector.LogicSqlInjector;

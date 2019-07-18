@@ -1,4 +1,4 @@
-package com.schcilin.goods.config;
+package com.schcilin.goods.config.datasource;
 
 import com.zaxxer.hikari.HikariDataSource;
 import org.springframework.boot.context.properties.ConfigurationProperties;

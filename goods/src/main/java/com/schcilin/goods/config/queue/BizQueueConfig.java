@@ -1,4 +1,4 @@
-package com.schcilin.goods.config;
+package com.schcilin.goods.config.queue;
 
 import com.schcilin.goods.consumer.BizMQTransationMessageListener;
 import com.schcilin.mqtransation.config.XxlQueueConfig;
