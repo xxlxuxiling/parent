@@ -1,7 +1,7 @@
 # 开发环境配置
 spring:
   datasource:
-    url:  jdbc:mysql://localhost:3306/goods?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC
+    jdbc-url:  jdbc:mysql://localhost:3306/goods?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC
     username: ENC(G7ALfJeKPcEMl1SBJ51G2w==)
     password: ENC(+X2JfbrxEzdjhP5glc9srA==)
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -43,4 +43,9 @@ spring:
   redis:
       host: 127.0.0.1
       port: 6379
-
+#springboot actuator不监测es
+management:
+  health:
+    #让es自己监测
+    elasticsearch:
+      enabled: false

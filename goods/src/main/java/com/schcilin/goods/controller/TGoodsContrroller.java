@@ -5,8 +5,7 @@ import com.schcilin.goods.entity.TGoods;
 import com.schcilin.goods.feign.BaseInfoFeignClient;
 import com.schcilin.goods.service.TGoodsService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import org.springframework.stereotype.Controller;
 
@@ -18,7 +17,7 @@ import org.springframework.stereotype.Controller;
  * @author schcilin
  * @since 2019-06-04
  */
-@Controller
+@RestController
 @RequestMapping("/tGoods")
 public class TGoodsContrroller {
     @Autowired
@@ -33,9 +32,11 @@ public class TGoodsContrroller {
         tGoods.setGoodName("哈哈哈");
         tGoodsService.insertModel(tGoods,"1");
     }
-    @PostMapping("/sss")
-    public void sss(){
-        baseInfoFeignClient.addUser(null);
+    @GetMapping("/sss")
+    public String sss(){
+
+        return "c";
+        //baseInfoFeignClient.addUser(null);
     }
 
 }

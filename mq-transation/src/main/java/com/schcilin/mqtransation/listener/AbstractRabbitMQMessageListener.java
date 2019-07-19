@@ -30,8 +30,14 @@ public abstract class AbstractRabbitMQMessageListener implements ChannelAwareMes
      */
     public abstract void receiveMsg(Message message) throws Exception;
 
+    /**
+     * 消息确认，子类不能重写
+     * @param message
+     * @param channel
+     * @throws Exception
+     */
     @Override
-    public void onMessage(Message message, Channel channel) throws Exception {
+    public final void onMessage(Message message, Channel channel) throws Exception {
         MessageProperties messageProperties = message.getMessageProperties();
         long deliveryTag = messageProperties.getDeliveryTag();
         Long countConsumercount = redisTemplate.opsForHash().increment(MQConstant.MQ_CONSUMER_RETRY_COUNT_KEY, messageProperties.getMessageId(), 1L);
