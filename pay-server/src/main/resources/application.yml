@@ -17,6 +17,15 @@ spring:
     name: pay_server
   profiles:
     active: dev
+    #彩色控制台输出
+  output:
+    ansi:
+      enabled: always
+
+#随机属性
+my:
+  secret: ${random.value}
+
 
 #mybatis plus
 mybatis-plus:

@@ -6,6 +6,10 @@ import com.schcilin.payserver.service.PayChannelService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.reflections.Reflections;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Isolation;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.transaction.interceptor.TransactionAspectSupport;
 
 import java.lang.reflect.Field;
 import java.util.Set;
@@ -42,11 +46,17 @@ public class PayChannelServiceImpl extends ServiceImpl<PayChannelMapper, PayChan
     }
 
     @Override
+    @Transactional(isolation = Isolation.DEFAULT, propagation = Propagation.NESTED, readOnly = false)
     public void testException() {
         try {
-            int q = 1 / 0;
+            PayChannel channel = new PayChannel();
+            channel.setId("11111111");
+            channel.setName("444");
+            this.baseMapper.insert(channel);
 
-        } catch (Exception e) {
+
+        } finally {
+            //TransactionAspectSupport.currentTransactionStatus().setRollbackOnly();
         }
 
     }

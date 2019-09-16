@@ -10,5 +10,4 @@
         <result column="code" property="code" />
         <result column="simple_name" property="simpleName" />
     </resultMap>
-
 </mapper>
