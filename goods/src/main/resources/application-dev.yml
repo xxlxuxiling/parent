@@ -61,5 +61,5 @@ apollo:
   bootstrap:
     enable: true
     namespaces: application,TEST2.config-schcilin
-
   env: FAT
+

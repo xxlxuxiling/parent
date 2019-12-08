@@ -6,9 +6,10 @@ import com.schcilin.goods.feign.BaseInfoFeignClient;
 import com.schcilin.goods.service.TGoodsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.*;
-
-import org.springframework.stereotype.Controller;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * <p>
@@ -18,6 +19,7 @@ import org.springframework.stereotype.Controller;
  * @author schcilin
  * @since 2019-06-04
  */
+//@RefreshScope
 @RestController
 @RequestMapping("/tGoods")
 public class TGoodsContrroller {

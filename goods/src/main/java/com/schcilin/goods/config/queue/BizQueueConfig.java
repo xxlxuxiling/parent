@@ -18,7 +18,7 @@ import org.springframework.context.annotation.Configuration;
  * 建议每个队列定义自己的QueueConfig
  */
 
-@Configuration
+//@Configuration
 public class BizQueueConfig {
 
     /**
