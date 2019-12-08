@@ -26,26 +26,40 @@ spring:
 
 
     #mq配置H
-  rabbitmq:
-      host: 192.168.1.78
-      port: 5672
-      username: admin
-      password: admin
+  #rabbitmq:
+      #host: 192.168.1.78
+      #port: 5672
+      #username: admin
+      #password: admin
       #\u5730\u5740\u865A\u62DF\u7A7A\u95F4
-      virtual-host: /
+      #virtual-host: /
       #\u5F00\u542F\u6D88\u606F\u786E\u8BA4\u673A\u5236 confirms
-      publisher-confirms: true
-      publisher-returns: true
+      #publisher-confirms: true
+      #publisher-returns: true
 
 
 
     #redis配置
-  redis:
-      host: 127.0.0.1
-      port: 6379
+  #redis:
+      #host: 127.0.0.1
+      #port: 6379
 #springboot actuator不监测es
 management:
   health:
     #让es自己监测
     elasticsearch:
       enabled: false
+
+#携程统一配置中心
+app:
+  id: schcilin-test
+
+apollo:
+  meta: http://127.0.0.1:6060
+  #cluster: myCluster
+  #cacheDir: /opt/testDir
+  bootstrap:
+    enable: true
+    namespaces: application,TEST2.config-schcilin
+
+  env: FAT

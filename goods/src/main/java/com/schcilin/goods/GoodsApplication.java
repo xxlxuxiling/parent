@@ -1,5 +1,6 @@
 package com.schcilin.goods;
 
+import com.ctrip.framework.apollo.spring.annotation.EnableApolloConfig;
 import com.ulisesbocchio.jasyptspringboot.annotation.EnableEncryptableProperties;
 import org.springframework.boot.SpringApplication;
 import org.springframework.cloud.client.SpringCloudApplication;
@@ -11,7 +12,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.context.request.RequestContextListener;
-
+@EnableApolloConfig
 @EnableEncryptableProperties//开启数据库加密配置，不开启访问时需要密码错误
 @SpringCloudApplication
 @EnableFeignClients
